@@ -1,0 +1,156 @@
+% Preamble
+\documentclass[spanish,12pt,letterpaper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{setspace}
+\usepackage[backend=biber,style=apa]{biblatex}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{xcolor}
+\addbibresource{biblio.bib}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\geometry{letterpaper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\setlength{\parindent}{1.27cm}
+\setlength{\parskip}{0pt}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3} 
+\let\showframe\relax
+
+% --- CUERPO DEL DOCUMENTO ---
+\begin{document}
+\sloppy 
+
+% --- CARÁTULA ---
+
+% Logo superior
+
+\begin{titlepage}
+\centering % Centra todo el contenido
+
+% --- Borde decorativo ---
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[line width=1pt] 
+    ($(current page.north west) + (1cm,-1cm)$) 
+    rectangle 
+    ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+
+% Encabezado institucional
+{\Large\bfseries UNIVERSIDAD AUTÓNOMA GABRIEL RENÉ MORENO}\\[0.5cm]
+{\normalsize\bfseries FACULTAD DE INGENIERÍA EN CIENCIAS DE LA COMPUTACIÓN Y TELECOMUNICACIONES}\\[0.3cm]
+{\normalsize\bfseries UAGRM SCHOOL OF ENGINEERING}\\[1cm]
+
+% Logo
+\includegraphics[width=8cm]{logo-postgrado.png}\\[1cm]
+
+% Programa
+{\Large\bfseries DIPLOMADO EN}\\[0.2cm] 
+{\Large\bfseries DEVOPS ESSENTIALS V1 E4}\\[1.6cm] 
+
+% Título
+{\LARGE\bfseries\begin{minipage}{0.9\textwidth}\centering
+VISUALIZACIÓN INTERACTIVA DE ALGORITMOS DE CONSENSO EN BLOCKCHAIN
+\end{minipage}}\\[1.5cm]
+
+% Subtítulo
+{\large\bfseries Monografía para optar por el Certificado de Culminación de Estudios de Diplomado}\\[1.2cm]
+
+% Autor y tutor
+{\large\bfseries Autor:} {\large Daniel Cueto Torrico}\\[0.5cm]
+{\large\bfseries Tutor de Monografía:} {\large MSc. Edwin Vargas Yapura}\\[1cm]
+
+% Lugar y fecha
+{\large\bfseries Santa Cruz – Bolivia}\\[0.2cm]
+{\large\bfseries Mayo – \the\year}
+\end{titlepage}
+
+
+
+\doublespacing
+\tableofcontents
+\newpage
+
+\chapter{Perfil del proyecto}
+\section{Introducción}
+La presente monografía se centra en el diseño e implementación de una herramienta de visualización interactiva para algoritmos de consenso en blockchain. Esta tecnología, que ha trascendido su aplicación original en criptomonedas, encuentra aplicaciones en sectores como finanzas, cadenas de suministro, salud e IoT \parencite{businesswire2025blockchain}.
+
+La herramienta propuesta adopta un doble enfoque: educativo y analítico. Desde la perspectiva educativa, busca simplificar la comprensión de procesos complejos como la validación de transacciones y sincronización de nodos. Desde el aspecto analítico, permitirá simular escenarios como ataques maliciosos, bifurcaciones y fallos de nodos, fundamental para evaluar la robustez de los algoritmos.
+
+Se abordarán los principales algoritmos de consenso: Proof of Work (PoW), Proof of Stake (PoS) y Practical Byzantine Fault Tolerance (PBFT), analizando aspectos como seguridad, escalabilidad y eficiencia energética.
+
+\section{Contextualización}
+\subsection{La Tecnología Blockchain}
+La tecnología blockchain se define como un sistema de registro distribuido que combina almacenamiento distribuido, redes P2P, algoritmos de consenso y criptografía \parencite{odu20255g}. El mercado global proyecta un crecimiento del 58.3\% anual, alcanzando 306 mil millones de dólares para 2030 \parencite{businesswire2025blockchain}.
+
+Las tendencias 2025-2030 incluyen adopción empresarial, Monedas Digitales de Bancos Centrales (CBDC), integración con IA, soluciones sostenibles e interoperabilidad entre blockchains \parencite{charterglobal2025top}.
+
+\subsection{Algoritmos de Consenso}
+Los algoritmos de consenso son protocolos que permiten a redes descentralizadas alcanzar acuerdo sobre transacciones sin autoridad central \parencite{visa2025what}. Existen más de 130 algoritmos identificados, cada uno optimizando diferentes parámetros: seguridad, velocidad, consumo energético y descentralización \parencite{researchgate2025systematic}.
+
+El "Trilema de la Blockchain" ilustra la dificultad de optimizar simultáneamente escalabilidad, seguridad y descentralización. PoW ofrece seguridad pero consume mucha energía, mientras PoS es más eficiente pero puede tender a la centralización.
+
+\subsubsection{Principales Familias de Algoritmos}
+\textbf{Proof of Work (PoW):} Mineros resuelven problemas matemáticos complejos. Altamente seguro pero consume mucha energía.
+
+\textbf{Proof of Stake (PoS):} Validadores seleccionados según su participación económica. Más eficiente energéticamente.
+
+\textbf{Practical Byzantine Fault Tolerance (PBFT):} Protocolo para sistemas que toleran nodos maliciosos, común en blockchains privadas.
+
+\textbf{Delegated Proof of Stake (DPoS):} Los usuarios votan por delegados que validan transacciones, mejorando escalabilidad.
+
+\subsection{Visualización Interactiva como Herramienta Pedagógica}
+La visualización interactiva facilita la comprensión de sistemas complejos, mejorando la memoria, el reconocimiento de patrones y las operaciones de inferencia \parencite{researchgate2018towards}. Para conceptos abstractos como los algoritmos de consenso, la visualización ofrece una representación que es más fácil de recordar y permite la experimentación \parencite{stanford2025rodger}.
+
+El valor de las herramientas interactivas radica en permitir la participación activa, donde los usuarios pueden modificar parámetros y observar consecuencias directas. Este enfoque de "aprender haciendo" es crucial para desarrollar conocimiento tácito en campos abstractos como blockchain \parencite{chronicle2025impact}.
+
+\subsection{Estado del Arte}
+Existen diversas herramientas para visualización de algoritmos y blockchain, incluyendo simuladores de investigación como BFTSim y BlockEmulator, y visualizadores educativos como jiechen257/blockchain-visualizer y RaftScope \parencite{github2025jiechen257, raftgithub2025raft}. Sin embargo, se identifica una brecha: la falta de una herramienta integrada que combine necesidades educativas y analíticas para múltiples algoritmos de consenso principales.
+
+\section{Planteamiento del Problema}
+Los algoritmos de consenso en blockchain son inherentemente complejos debido a su naturaleza abstracta y la multiplicidad de componentes que involucran. Esta complejidad obstaculiza la formación efectiva de profesionales y la capacidad de analizar críticamente la seguridad y rendimiento de las redes existentes.
+
+Las herramientas educativas actuales presentan limitaciones: los simuladores de investigación se enfocan en métricas de rendimiento más que en visualización pedagógica, mientras que las herramientas educativas tienden a ser específicas para un solo algoritmo. Se requiere un entorno interactivo que permita simular y analizar escenarios como ataques, bifurcaciones y fallos de nodos.
+
+\textbf{Pregunta Central:} ¿Cómo puede una herramienta de visualización interactiva, desarrollada como aplicación web, mejorar significativamente la comprensión y análisis comparativo de los principales algoritmos de consenso en blockchain?
+
+\section{Justificación}
+\subsection{Relevancia Académica}
+La investigación contribuye al conocimiento mediante: (1) síntesis y clarificación de algoritmos complejos para visualización, y (2) innovación en herramientas de investigación y pedagogía que pueden servir como plataforma para investigaciones futuras sobre comportamiento de algoritmos.
+
+\subsection{Impacto Educativo}
+La herramienta aborda dificultades inherentes al aprendizaje mediante visualización interactiva que mejora la comprensión, permite aprendizaje activo, reduce la carga cognitiva y aumenta el compromiso estudiantil \parencite{researchgate2018towards, stanford2025rodger}.
+
+\subsection{Impacto Analítico}
+Provee un entorno "sandbox" para experimentación, permitiendo simulación de escenarios críticos, análisis comparativo de algoritmos y desarrollo de contramedidas intuitivas contra vulnerabilidades.
+
+\subsection{Pertinencia de Aplicación Web}
+La implementación web ofrece accesibilidad universal, facilidad de uso y mantenimiento, y potencial para crear una comunidad colaborativa de aprendizaje.
+
+\section{Objetivos}
+\subsection{Objetivo General}
+Diseñar e implementar una herramienta de visualización interactiva basada en web para facilitar la comprensión teórica y análisis práctico de los principales algoritmos de consenso en blockchain (PoW, PoS, PBFT).
+
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+    \item Realizar una revisión teórica exhaustiva de los principales algoritmos de consenso, analizando evolución histórica, mecanismos fundamentales, seguridad, escalabilidad y eficiencia energética.
+    
+    \item Identificar y modelar aspectos clave y procesos dinámicos de cada algoritmo que se beneficiarían de representación visual interactiva.
+    
+    \item Diseñar la arquitectura de software especificando módulos principales, interacciones, estructuras de datos y UI/UX para asegurar efectividad educativa y analítica.
+    
+    \item Implementar la herramienta como aplicación web utilizando tecnologías modernas (JavaScript, React, D3.js).
+    
+    \item Desarrollar funcionalidades de simulación interactiva para diferentes configuraciones, latencia variable, bifurcaciones, fallos de nodos y ataques comunes.
+    
+    \item Evaluar efectividad mediante pruebas con usuarios objetivo, recopilando feedback sobre impacto en comprensión y capacidad analítica.
+\end{enumerate}
+
+
+\printbibliography
+\end{document}

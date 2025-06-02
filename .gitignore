@@ -1,0 +1,32 @@
+# Archivos de salida de LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.pdf
+
+# Archivos de respaldo y temporales
+*~
+*.bak
+*.backup
+*.sav
+*.tmp
+*.swp
+*.swo
+
+# Carpeta de compilación
+build/
+
+# Archivos específicos de VSCode
+.vscode/
+
+# Otros
+*.DS_Store
+Thumbs.db
