@@ -59,11 +59,9 @@ VISUALIZACIÓN INTERACTIVA DE ALGORITMOS DE CONSENSO EN BLOCKCHAIN
 \end{minipage}}\\[1.5cm]
 
 % Subtítulo
-{\large\bfseries Monografía para optar por el Certificado de Culminación de Estudios de Diplomado}\\[1.2cm]
-
+{\large\bfseries Monografía para optar por el Certificado de Culminación de Estudios y al título de Licenciatura en Ingeniería Informática}\\[1.2cm]
 % Autor y tutor
 {\large\bfseries Autor:} {\large Daniel Cueto Torrico}\\[0.5cm]
-{\large\bfseries Tutor de Monografía:} {\large MSc. Edwin Vargas Yapura}\\[1cm]
 
 % Lugar y fecha
 {\large\bfseries Santa Cruz – Bolivia}\\[0.2cm]
@@ -150,6 +148,360 @@ Diseñar e implementar una herramienta de visualización interactiva basada en w
     
     \item Evaluar efectividad mediante pruebas con usuarios objetivo, recopilando feedback sobre impacto en comprensión y capacidad analítica.
 \end{enumerate}
+
+\chapter{Marco Teórico}
+
+\section{Fundamentos de la Tecnología Blockchain y el Consenso Distribuido}
+
+\subsection{Introducción a la Tecnología Blockchain}
+
+La tecnología blockchain se define como un libro de contabilidad digital que es inherentemente descentralizado, distribuido entre sus participantes y diseñado para ser inmutable \parencite{aws2025blockchain}. Esta tecnología emergió inicialmente como el sustento de las criptomonedas, como Bitcoin \parencite{nakamoto2008bitcoin}, pero su aplicabilidad se ha extendido a numerosos campos que requieren un registro seguro y transparente de transacciones o datos.
+
+\subsubsection{Principios Fundamentales}
+
+Los principios fundamentales que sustentan la tecnología blockchain son la descentralización, la inmutabilidad y la transparencia \parencite{amores2020blockchain}:
+
+\textbf{Descentralización:} Este principio se refiere a la transferencia del control y la toma de decisiones desde una entidad centralizada hacia una red distribuida \parencite{aws2025blockchain}. En las redes de blockchain descentralizadas, la transparencia inherente reduce la necesidad de confianza directa entre los participantes. Estas redes están diseñadas para impedir que cualquier participante ejerza una autoridad o control desproporcionado que pueda mermar la funcionalidad de la red.
+
+\textbf{Inmutabilidad:} Significa que una vez que una transacción ha sido registrada en el libro mayor compartido, no puede ser cambiada o alterada por ningún participante \parencite{aws2025blockchain}. Si se detecta un error en un registro de transacción, se debe agregar una nueva transacción para revertir dicho error, y ambas transacciones permanecen visibles para la red. Este registro inalterable se consigue mediante el encadenamiento criptográfico de los bloques.
+
+\textbf{Transparencia:} Implica que todos los participantes de la red tienen acceso al libro de contabilidad distribuido y a su registro inmutable de transacciones \parencite{ibm2025blockchain}. La transparencia en blockchain es selectiva y configurable. En redes permisionadas, los registros confidenciales pueden compartirse únicamente con miembros autorizados, mientras que las redes públicas pueden ofrecer información accesible para cualquiera, aunque de forma anónima.
+
+\subsubsection{Arquitectura de Blockchain}
+
+La arquitectura de una blockchain se compone de varios elementos clave \parencite{bartolomeo2025intro}:
+
+\textbf{Bloques:} Son las unidades fundamentales que registran las transacciones. Cada bloque puede registrar información como quién participó, qué sucedió, cuándo, dónde, cuánto, e incluso condiciones específicas.
+
+\textbf{Encadenamiento de Bloques:} Cada bloque está conectado al bloque anterior y al posterior mediante funciones hash criptográficas. El hash del bloque anterior se incluye en el encabezado del bloque actual, creando una cadena. Si el contenido de un bloque se modifica, el valor de su hash cambia, proporcionando una forma de detectar la manipulación de los datos.
+
+\textbf{Libro Mayor Compartido/Distribuido:} Es el registro completo de todas las transacciones, replicado y compartido entre todos los participantes de la red. Esto elimina la duplicación de esfuerzos típica de las redes empresariales tradicionales.
+
+\textbf{Nodos:} Son los ordenadores que participan en la red blockchain. Para comunicarse entre sí, todos los nodos involucrados deben operar bajo el mismo software o protocolo.
+
+\textbf{Contratos Inteligentes:} Son conjuntos de reglas o acuerdos autoejecutables almacenados en la blockchain. Se ejecutan automáticamente cuando se cumplen las condiciones definidas, acelerando las transacciones.
+
+\subsection{El Desafío del Consenso en Sistemas Distribuidos}
+
+El concepto de consenso en sistemas distribuidos se refiere al acuerdo colectivo alcanzado entre los diferentes nodos de una red para verificar y confirmar transacciones o el estado general del sistema \parencite{crypto2025consensus}. Es el procedimiento mediante el cual los pares en una red blockchain llegan a un acuerdo sobre el estado actual de los datos en dicha red.
+
+La necesidad de consenso es fundamental en la tecnología blockchain. Un sistema de cadena de bloques establece reglas específicas sobre el consentimiento de los participantes para el registro de transacciones; solo se pueden añadir nuevas transacciones al libro mayor cuando la mayoría de los participantes de la red otorgan su consentimiento \parencite{aws2025blockchain}.
+
+\subsubsection{Funciones Esenciales del Consenso}
+
+Los algoritmos de consenso cumplen múltiples funciones críticas \parencite{crypto2025consensus}:
+
+\begin{itemize}
+    \item Aseguran la \textbf{consistencia y fiabilidad} en sistemas descentralizados, donde no existe una autoridad central que dicte la verdad.
+    \item Mantienen la \textbf{integridad de los datos} y permiten alcanzar un estado de confianza entre los participantes.
+    \item Protegen la cadena de bloques contra \textbf{actividades fraudulentas} y abordan el problema del \textbf{"doble gasto"}.
+    \item Convierten al sistema en \textbf{tolerante a fallos}, permitiendo que la red continúe operando correctamente incluso si algunos nodos fallan o se comportan de manera maliciosa.
+\end{itemize}
+
+\subsection{El Problema de los Generales Bizantinos}
+
+El Problema de los Generales Bizantinos (PGB) fue planteado formalmente en 1982 por Lamport, Shostak y Pease como una forma de modelar el desafío de alcanzar el consenso en sistemas de redes distribuidas donde los componentes pueden fallar de maneras impredecibles y maliciosas \parencite{amores2020blockchain}.
+
+El problema se describe mediante una analogía: varios generales del ejército bizantino, cada uno con su división, rodean una ciudad enemiga. Deben decidir colectivamente si atacar o retirarse. La comunicación entre ellos se realiza únicamente mediante mensajeros, y algunos generales pueden ser traidores que intentan confundir a los demás. Lo crucial no es la decisión en sí, sino que todos los generales leales ejecuten el mismo plan de acción.
+
+La relevancia del PGB para la tecnología blockchain es directa: las redes blockchain son sistemas distribuidos donde los nodos deben acordar la validez y el orden de las transacciones para mantener la integridad del libro mayor. Algunos nodos podrían fallar o actuar de manera maliciosa. Los mecanismos de consenso en blockchain están diseñados para ser tolerantes a estos fallos bizantinos \parencite{castro1999practical}.
+
+\section{Algoritmos de Consenso en Blockchain: Análisis Teórico}
+
+\subsection{Proof of Work (PoW)}
+
+\subsubsection{Orígenes y Fundamentos Teóricos}
+
+El concepto de Prueba de Trabajo tiene sus raíces en ideas previas destinadas a combatir el abuso de recursos computacionales. El término "Proof of Work" fue formalmente propuesto por Jakobsson en 1999. Su aplicación más influyente llegó con Bitcoin, que adoptó PoW como su mecanismo de consenso fundamental \parencite{nakamoto2008bitcoin}.
+
+El fundamento teórico de PoW radica en la exigencia de un esfuerzo computacional significativo, pero fácilmente verificable, para proponer un nuevo bloque de transacciones. Los participantes de la red, conocidos como mineros, compiten para resolver un problema matemático complejo. La seguridad de la red bajo PoW se basa en la premisa de que la red permanecerá consistente siempre que la mayoría del poder computacional total esté controlada por nodos honestos.
+
+\subsubsection{Mecanismo Operativo}
+
+El mecanismo operativo de PoW se desarrolla de la siguiente manera \parencite{investopedia2025pow}:
+
+\begin{enumerate}
+    \item \textbf{Competición de Minería:} Los mineros agrupan las transacciones pendientes en un bloque candidato.
+    \item \textbf{Resolución del Puzzle Criptográfico:} Para que su bloque sea aceptado, un minero debe encontrar un valor específico, llamado "nonce", tal que al aplicar una función hash criptográfica (comúnmente SHA-256) al encabezado del bloque, el hash resultante sea numéricamente inferior a un valor objetivo determinado por la red.
+    \item \textbf{Propagación y Verificación del Bloque:} El primer minero que encuentra un nonce válido transmite su bloque a la red. Otros nodos verifican la validez de la prueba de trabajo y las transacciones contenidas.
+    \item \textbf{Adición a la Cadena y Recompensa:} Si el bloque es válido, los otros mineros lo aceptan y comienzan a minar sobre él. El minero exitoso recibe una recompensa.
+\end{enumerate}
+
+Un aspecto crucial del mecanismo PoW es el ajuste dinámico de la dificultad del puzzle criptográfico, que se realiza periódicamente para mantener una tasa de creación de bloques relativamente constante, independientemente de las fluctuaciones en el poder de cómputo total de la red.
+
+\subsubsection{Análisis de Características}
+
+\textbf{Seguridad:} PoW es considerado un mecanismo de alta seguridad. La seguridad se deriva del inmenso poder computacional acumulado que se requeriría para atacar la red. Sin embargo, PoW es vulnerable al ataque del 51\%, donde una entidad que controle más del 50\% del poder de cómputo total podría manipular la cadena.
+
+\textbf{Escalabilidad:} PoW presenta limitaciones significativas en términos de escalabilidad. El rendimiento es bajo, y los tiempos de confirmación de transacciones pueden ser largos debido al tiempo necesario para resolver el puzzle criptográfico.
+
+\textbf{Eficiencia Energética:} Esta es una de las críticas más severas a PoW. Es un mecanismo altamente intensivo en energía. El proceso de minería consume enormes cantidades de electricidad.
+
+\textbf{Descentralización:} Aunque inicialmente fue concebido para ser altamente descentralizado, la realidad ha mostrado una tendencia hacia la centralización del poder minero debido al desarrollo de hardware especializado (ASICs) y la formación de grandes pools de minería.
+
+\subsection{Proof of Stake (PoS)}
+
+\subsubsection{Orígenes y Fundamentos Teóricos}
+
+Proof of Stake surgió como una alternativa al energéticamente intensivo Proof of Work, con la primera propuesta teórica apareciendo en 2011 y la primera implementación práctica en Peercoin en 2012 \parencite{itm2025pos}. Un hito importante fue la transición de Ethereum de PoW a PoS en septiembre de 2022 \parencite{ethereum2022merge}.
+
+El fundamento teórico de PoS se basa en la idea de que la probabilidad de que un participante sea elegido para crear el siguiente bloque es proporcional a la cantidad de criptomoneda que posee y está dispuesto a "apostar" como garantía (stake) \parencite{investopedia2024pos}. La premisa es que aquellos con una participación económica significativa tienen un incentivo inherente para actuar honestamente.
+
+\subsubsection{Mecanismo Operativo}
+
+El mecanismo operativo de PoS involucra varios componentes clave:
+
+\begin{enumerate}
+    \item \textbf{Staking:} Los usuarios que desean participar en el proceso de validación deben bloquear una cierta cantidad de sus monedas como "stake". Este stake actúa como una garantía.
+    \item \textbf{Selección de Validadores:} Los validadores son seleccionados para proponer y confirmar bloques. El método de selección implica un elemento de aleatoriedad ponderado por factores como el tamaño del stake del validador.
+    \item \textbf{Validación y Propuesta de Bloques:} El validador seleccionado propone un nuevo bloque. Otros validadores atestiguan la validez del bloque propuesto.
+    \item \textbf{Recompensas y Penalizaciones (Slashing):} Los validadores honestos son recompensados. Si un validador actúa de manera deshonesta, su stake puede ser objeto de "slashing" - la confiscación parcial o total del stake como penalización.
+\end{enumerate}
+
+\subsubsection{Análisis de Características}
+
+\textbf{Seguridad:} PoS se considera robusto contra ciertos tipos de ataques. Para llevar a cabo un ataque del 51\% en PoS, un actor malicioso necesitaría adquirir el control del 51\% del total de las monedas apostadas, lo cual puede ser prohibitivamente caro.
+
+\textbf{Escalabilidad:} PoS generalmente ofrece mejor escalabilidad y tiempos de confirmación más rápidos comparado con PoW, al eliminar la necesidad de resolver puzzles criptográficos que consumen tiempo.
+
+\textbf{Eficiencia Energética:} Esta es una de las ventajas más significativas de PoS. Es mucho más eficiente energéticamente que PoW. La transición de Ethereum resultó en una reducción del consumo de energía de aproximadamente 99.84\% a 99.95\%.
+
+\textbf{Descentralización:} El impacto de PoS en la descentralización es tema de debate. Existe el riesgo de que conduzca a una centralización de la riqueza si aquellos con grandes cantidades de stake obtienen consistentemente más recompensas.
+
+\subsection{Practical Byzantine Fault Tolerance (PBFT)}
+
+\subsubsection{Orígenes y Fundamentos Teóricos}
+
+Practical Byzantine Fault Tolerance (PBFT) es un algoritmo de consenso desarrollado a finales de la década de 1990 por Miguel Castro y Barbara Liskov \parencite{castro1999practical}. Su introducción marcó un hito significativo, ya que demostró la viabilidad práctica de los protocolos de Tolerancia a Fallos Bizantinos en sistemas distribuidos reales.
+
+PBFT es una optimización del concepto de Replicación de Máquinas de Estado en un entorno que puede experimentar fallos bizantinos. Está diseñado para funcionar en sistemas asíncronos y puede tolerar hasta f nodos bizantinos en un sistema con un total de n=3f+1 nodos \parencite{geeksforgeeks2024pbft}.
+
+\subsubsection{Mecanismo Operativo}
+
+El mecanismo operativo de PBFT se caracteriza por un conjunto de nodos ordenados secuencialmente, donde uno actúa como el primario y los demás como secundarios. El consenso se alcanza a través de un protocolo de múltiples fases:
+
+\begin{enumerate}
+    \item \textbf{Request (Solicitud):} Un cliente envía una solicitud de operación al nodo primario actual.
+    \item \textbf{Pre-prepare (Pre-preparación):} El primario recibe la solicitud, le asigna un número de secuencia y la difunde a todos los nodos secundarios.
+    \item \textbf{Prepare (Preparación):} Al recibir un mensaje de pre-prepare válido, cada nodo secundario difunde un mensaje de prepare a todos los demás nodos.
+    \item \textbf{Commit (Confirmación):} Una vez que un nodo ha recibido suficientes mensajes de prepare, difunde un mensaje de commit a todos los demás nodos.
+    \item \textbf{Reply (Respuesta):} Después de ejecutar la operación, cada nodo envía un mensaje de reply al cliente.
+\end{enumerate}
+
+Una característica crucial de PBFT es su mecanismo de \textbf{Cambio de Vista}, que se activa si los nodos secundarios detectan que el primario actual ha fallado o es sospechoso de ser malicioso.
+
+\subsubsection{Análisis de Características}
+
+\textbf{Seguridad:} PBFT ofrece alta seguridad y es tolerante a fallos bizantinos, funcionando correctamente incluso si hasta f de n nodos se comportan de manera maliciosa. Sin embargo, es vulnerable a ataques Sybil si no se controla estrictamente la membresía de la red.
+
+\textbf{Escalabilidad:} La escalabilidad es la principal limitación de PBFT. El protocolo implica múltiples rondas de comunicación resultando en una complejidad de mensajes que crece cuadráticamente con el número de nodos (O(n²)). Por esta razón, PBFT es más adecuado para redes permisionadas con un número relativamente pequeño de nodos participantes.
+
+\textbf{Rendimiento:} En redes pequeñas, PBFT puede alcanzar baja latencia y alto rendimiento. Es eficiente energéticamente ya que no implica minería computacional intensiva.
+
+\textbf{Descentralización:} PBFT se utiliza típicamente en blockchains permisionadas donde los participantes son conocidos y autorizados, implicando un menor grado de descentralización comparado con protocolos para redes públicas.
+
+\subsubsection{Variantes Relevantes}
+
+Han surgido numerosas variantes para superar las limitaciones del PBFT clásico \parencite{mdpi2025pbft}:
+
+\textbf{HotStuff:} Introduce una estructura de comunicación en pipeline y una regla de confirmación que le permite alcanzar cambio de vista lineal y responsividad.
+
+\textbf{Tendermint:} Combina la filosofía de PBFT con elementos que recuerdan a DPoS, conocido por su finalidad rápida.
+
+\textbf{Ejemplos de Implementación:} Hyperledger Fabric ofrece PBFT para su servicio de ordenación \parencite{hyperledger2025fabric}, Zilliqa utiliza PBFT para el consenso dentro de los shards.
+
+\subsection{Análisis Comparativo}
+
+La elección de un algoritmo de consenso impacta directamente en la seguridad, rendimiento, descentralización y eficiencia energética del sistema. A continuación se presenta una comparación de las características principales:
+
+\begin{table}[h]
+\centering
+\caption{Comparación de Algoritmos de Consenso}
+\begin{tabular}{|l|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Característica} & \textbf{PoW} & \textbf{PoS} & \textbf{PBFT} \\
+\hline
+Mecanismo Principal & Minería competitiva & Selección por stake & Votación multi-fase \\
+\hline
+Seguridad & Alta (costoso atacar) & Buena (slashing) & Alta contra bizantinos \\
+\hline
+Escalabilidad & Baja & Moderada-Alta & Alta (redes pequeñas) \\
+\hline
+Eficiencia Energética & Muy Baja & Muy Alta & Alta \\
+\hline
+Descentralización & Riesgo centralización & Riesgo concentración & Limitada (permisionada) \\
+\hline
+Finalidad & Probabilística & Variable & Determinística \\
+\hline
+Tolerancia a Fallos & <50\% hashrate & <50\% stake & <1/3 nodos \\
+\hline
+\end{tabular}
+\end{table}
+
+No existe un algoritmo de consenso universalmente superior; la elección óptima depende de los requisitos específicos de la aplicación blockchain. Este análisis revela el "trilema de la blockchain": es difícil optimizar simultáneamente la seguridad, la escalabilidad y la descentralización.
+
+\section{Visualización Interactiva para la Comprensión de Algoritmos de Consenso}
+
+\subsection{Principios Fundamentales de la Visualización de Datos}
+
+El objetivo primordial de la visualización de datos es transformar información abstracta en narrativas visuales significativas, fáciles de comprender y que faciliten el aprendizaje \parencite{dev3lop2025visualization}. Para algoritmos complejos como los de consenso, la visualización debe simplificar los conjuntos de datos complejos y ayudar a revelar patrones que podrían permanecer ocultos en representaciones textuales.
+
+\subsubsection{Principios de Diseño}
+
+Para lograr visualizaciones efectivas, el diseño se guía por varios principios fundamentales \parencite{thoughtspot2025principles}:
+
+\begin{itemize}
+    \item \textbf{Conocer a la Audiencia:} Identificar quién utilizará la visualización, sus objetivos y nivel de conocimiento previo.
+    \item \textbf{Simplicidad y Claridad:} Comunicar la información de manera clara y directa, evitando el desorden visual.
+    \item \textbf{Precisión e Integridad:} Representar los datos de manera veraz y fiable.
+    \item \textbf{Uso del Tipo de Gráfico Adecuado:} La elección debe estar alineada con la naturaleza de los datos.
+    \item \textbf{Uso Inteligente del Color:} Usar color de manera consistente y con propósito.
+    \item \textbf{Evitar el Desorden:} Permitir que el usuario descubra información progresivamente.
+\end{itemize}
+
+\subsubsection{Importancia de la Interactividad}
+
+La interactividad transforma al usuario de un observador pasivo a un participante activo en el proceso de exploración y aprendizaje \parencite{algocademy2025algorithm}. Para algoritmos de consenso, donde los procesos son dinámicos e involucran múltiples componentes, la interactividad permite:
+
+\begin{itemize}
+    \item \textbf{Comprensión Mejorada:} Desglosar datos complejos en partes manejables.
+    \item \textbf{Mayor Participación:} Mantener a los usuarios interesados y motivados.
+    \item \textbf{Descubrimiento de Insights:} Manipular y explorar datos para descubrir patrones.
+    \item \textbf{Mejora de la Retención:} El aprendizaje visual e interactivo mejora la retención de conceptos.
+\end{itemize}
+
+\subsection{Diseño de Interacción para Herramientas Educativas}
+
+El diseño de una herramienta de visualización interactiva para algoritmos de consenso requiere consideración cuidadosa de principios de experiencia de usuario (UX) y estrategias pedagógicas \parencite{justinmind2025elearning}.
+
+\subsubsection{Estrategias Pedagógicas}
+
+\textbf{Diseño Centrado en el Aprendiz:} La herramienta debe diseñarse considerando las necesidades y nivel de conocimiento de los usuarios objetivo.
+
+\textbf{Fomentar la Interactividad:} Permitir a los usuarios manipular parámetros, predecir resultados y observar consecuencias de sus acciones.
+
+\textbf{Aplicación de Principios Multimedia:} Usar elementos visuales combinados con narración o texto explicativo de forma efectiva.
+
+\textbf{Gamificación:} Incorporar elementos de juego como seguimiento del progreso y resolución de desafíos interactivos.
+
+\textbf{Feedback Inmediato:} Proporcionar retroalimentación en tiempo real sobre las acciones del usuario.
+
+\subsubsection{Técnicas de Narrativa Visual}
+
+La narrativa visual transforma características técnicas abstractas en narrativas convincentes \parencite{fastercapital2025visual}:
+
+\begin{itemize}
+    \item \textbf{Uso de Metáforas:} Comparar conceptos abstractos con experiencias familiares.
+    \item \textbf{Creación de Escenarios:} Construir narrativas en torno a eventos específicos como el "viaje" de una transacción.
+    \item \textbf{Estructura Narrativa:} Seguir inicio, desarrollo y desenlace en las visualizaciones.
+    \item \textbf{Simplificación Progresiva:} Comenzar con una visión general y profundizar en detalles.
+    \item \textbf{Humanización de la Tecnología:} Resaltar cómo los algoritmos permiten confianza y seguridad.
+\end{itemize}
+
+\subsection{Técnicas Específicas para Visualización de Algoritmos de Consenso}
+
+\subsubsection{Representación de Estados de Nodos}
+
+Los nodos en un sistema de consenso atraviesan diferentes estados durante la ejecución del algoritmo. Las técnicas visuales incluyen:
+
+\begin{itemize}
+    \item \textbf{Codificación por Color/Forma:} Usar diferentes colores o formas para representar el estado actual de cada nodo.
+    \item \textbf{Diagramas de Estado:} Mostrar explícitamente los posibles estados y las transiciones entre ellos.
+    \item \textbf{Líneas de Tiempo de Estado:} Para cada nodo, mostrar la secuencia de estados durante la simulación.
+\end{itemize}
+
+\subsubsection{Representación del Flujo de Mensajes}
+
+Los algoritmos de consenso involucran intenso intercambio de mensajes entre nodos:
+
+\begin{itemize}
+    \item \textbf{Animación de Mensajes:} Visualizar mensajes como paquetes animados que se mueven entre nodos.
+    \item \textbf{Diagramas de Secuencia:} Ilustrar el orden temporal de mensajes intercambiados.
+    \item \textbf{Grafos Dinámicos de Comunicación:} Representar la red como un grafo donde los arcos representan mensajes.
+\end{itemize}
+
+\subsubsection{Visualización de Parámetros Específicos}
+
+Cada algoritmo tiene parámetros únicos que deben visualizarse efectivamente:
+
+\textbf{Para PoW:}
+\begin{itemize}
+    \item Visualizar el proceso de minería mostrando la búsqueda del nonce
+    \item Representar la dificultad y su ajuste dinámico
+    \item Mostrar la creación de bloques y crecimiento de la cadena
+\end{itemize}
+
+\textbf{Para PoS:}
+\begin{itemize}
+    \item Representar la cantidad de stake de cada validador
+    \item Visualizar el proceso de selección de validadores
+    \item Mostrar recompensas y penalizaciones (slashing)
+\end{itemize}
+
+\textbf{Para PBFT:}
+\begin{itemize}
+    \item Mostrar quorums y votación claramente
+    \item Distinguir roles (primario/secundarios)
+    \item Visualizar las fases del protocolo
+\end{itemize}
+
+\subsubsection{Simulación Interactiva de Escenarios}
+
+Una herramienta efectiva debe permitir explorar escenarios anómalos:
+
+\textbf{Simulación de Ataques:}
+\begin{itemize}
+    \item Ataques del 51\% en PoW/PoS
+    \item Ataques específicos de PoS (Nothing at Stake)
+    \item Comportamiento bizantino en PBFT
+\end{itemize}
+
+\textbf{Simulación de Bifurcaciones:}
+\begin{itemize}
+    \item Mostrar la cadena dividiéndose en ramas
+    \item Visualizar la resolución y convergencia
+    \item Permitir al usuario inducir bifurcaciones
+\end{itemize}
+
+\textbf{Simulación de Fallos de Nodos:}
+\begin{itemize}
+    \item Mostrar nodos volviéndose inactivos
+    \item Impacto en el consenso
+    \item Mecanismos de recuperación
+\end{itemize}
+
+\subsection{Consideraciones para Desarrollo de Aplicación Web}
+
+\subsubsection{Tecnologías Frontend}
+
+\textbf{JavaScript} es el lenguaje predominante para desarrollo web frontend.
+
+\textbf{Bibliotecas de Visualización:}
+\begin{itemize}
+    \item \textbf{D3.js:} Biblioteca extremadamente potente para crear visualizaciones dinámicas e interactivas personalizadas \parencite{d3js2025}.
+    \item \textbf{Vis.js:} Maneja bien redes, líneas de tiempo y datos jerárquicos.
+    \item \textbf{Chart.js, Recharts:} Para gráficos estándar y métricas agregadas.
+\end{itemize}
+
+\textbf{Frameworks Frontend:} React.js, Angular, o Vue.js para estructurar la aplicación y gestionar componentes de UI.
+
+\subsubsection{Herramientas Existentes}
+
+El proyecto de Chen \parencite{chen2024blockchain} es directamente relevante, siendo una herramienta web interactiva para visualizar conceptos de blockchain, incluyendo PoW y bifurcaciones, usando React, TypeScript y D3.js.
+
+Existen también simuladores académicos como SimBlock para evaluación de rendimiento, y herramientas comerciales como Crystal para análisis forense de transacciones.
+
+\subsubsection{Principios de Desarrollo}
+
+\textbf{Facilidad de Uso:} La herramienta debe ser intuitiva, incluso para usuarios con conocimientos técnicos limitados.
+
+\textbf{Control del Usuario:} Permitir controlar velocidad de simulación, pausar, retroceder, avanzar paso a paso.
+
+\textbf{Múltiples Vistas Coordinadas:} Ofrecer vista de red, línea de tiempo de mensajes, estado de nodos, y pseudocódigo del algoritmo.
+
+\textbf{Accesibilidad:} Considerar principios de diseño accesible para un amplio rango de usuarios.
+
+El desarrollo debe seguir un enfoque modular, donde la lógica de cada algoritmo esté separada de la capa de visualización, permitiendo añadir o modificar algoritmos más fácilmente.
 
 
 \printbibliography
