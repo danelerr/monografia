@@ -71,10 +71,31 @@ VISUALIZACIÓN INTERACTIVA DE ALGORITMOS DE CONSENSO EN BLOCKCHAIN
 
 
 \doublespacing
+
+% =============== ABSTRACT ===============
+\begin{abstract}
+La tecnología blockchain ha revolucionado múltiples sectores gracias a sus algoritmos de consenso, que garantizan la integridad y confiabilidad de los datos en redes distribuidas. Sin embargo, la comprensión de estos mecanismos complejos presenta desafíos significativos para estudiantes, investigadores y profesionales del área. Esta monografía presenta el diseño e implementación de una herramienta de visualización interactiva que facilita el entendimiento de los principales algoritmos de consenso: Proof of Work (PoW), Proof of Stake (PoS) y Practical Byzantine Fault Tolerance (PBFT).
+
+La propuesta aborda la necesidad de recursos educativos y analíticos especializados mediante una plataforma web que combina simulación en tiempo real, visualización dinámica y análisis comparativo. La herramienta utiliza tecnologías modernas como React.js, D3.js y Node.js para proporcionar una experiencia interactiva que permite manipular parámetros, observar comportamientos algorítmicos y evaluar métricas de rendimiento.
+
+Los resultados esperados incluyen una mejora significativa en la comprensión de conceptos blockchain complejos, facilitación del proceso de enseñanza-aprendizaje en entornos académicos, y provisión de herramientas analíticas para la evaluación técnica de sistemas distribuidos. La investigación contribuye al estado del arte en herramientas educativas para tecnologías emergentes y establece bases para futuras investigaciones en visualización de sistemas distribuidos.
+
+\textbf{Palabras clave:} blockchain, algoritmos de consenso, visualización interactiva, herramientas educativas, sistemas distribuidos, simulación en tiempo real.
+\end{abstract}
+
+\newpage
+
 \tableofcontents
 \newpage
 
+% =============== ÍNDICE DE TABLAS ===============
+\listoftables
+\newpage
+
 \chapter{Perfil del proyecto}
+
+\textit{Este capítulo establece el marco inicial de la investigación, presentando la contextualización del problema, los objetivos generales y específicos, y la justificación académica y práctica del desarrollo de una herramienta de visualización interactiva para algoritmos de consenso en blockchain.}
+
 \section{Introducción}
 La presente monografía se centra en el diseño e implementación de una herramienta de visualización interactiva para algoritmos de consenso en blockchain. Esta tecnología, que ha trascendido su aplicación original en criptomonedas, encuentra aplicaciones en sectores como finanzas, cadenas de suministro, salud e IoT \parencite{businesswire2025blockchain}.
 
@@ -150,6 +171,8 @@ Diseñar e implementar una herramienta de visualización interactiva basada en w
 \end{enumerate}
 
 \chapter{Marco Teórico}
+
+\textit{Este capítulo desarrolla los fundamentos teóricos necesarios para comprender la tecnología blockchain y los algoritmos de consenso. Se examinan los principios de descentralización, inmutabilidad y transparencia, así como los desafíos del consenso distribuido, el problema de los Generales Bizantinos, y las técnicas de visualización interactiva aplicadas a sistemas complejos.}
 
 \section{Fundamentos de la Tecnología Blockchain y el Consenso Distribuido}
 
@@ -503,6 +526,450 @@ Existen también simuladores académicos como SimBlock para evaluación de rendi
 
 El desarrollo debe seguir un enfoque modular, donde la lógica de cada algoritmo esté separada de la capa de visualización, permitiendo añadir o modificar algoritmos más fácilmente.
 
+% CAPÍTULO 3: DESCRIPCIÓN DE LA PROPUESTA SOLUCIÓN
+
+\chapter{DESCRIPCIÓN DE LA PROPUESTA SOLUCIÓN}
+
+\textit{Este capítulo presenta la propuesta técnica completa para el desarrollo de la herramienta de visualización interactiva. Incluye el análisis detallado de los algoritmos de consenso PoW, PoS y PBFT, el diseño arquitectónico de la aplicación web, la especificación de funcionalidades interactivas, y la contextualización con herramientas existentes en el mercado.}
+
+\section{Introducción}
+
+Los algoritmos de consenso constituyen el núcleo fundamental de la tecnología blockchain, determinando cómo los nodos de una red distribuida alcanzan acuerdos sobre el estado de la cadena de bloques sin depender de una autoridad central \cite{nakamoto2008bitcoin}. La comprensión profunda de estos mecanismos es crucial para el desarrollo, implementación y optimización de sistemas blockchain, especialmente considerando las diferencias significativas en términos de seguridad, escalabilidad y eficiencia energética entre algoritmos como Proof of Work (PoW), Proof of Stake (PoS) y Practical Byzantine Fault Tolerance (PBFT).
+
+La presente propuesta aborda la necesidad crítica de herramientas educativas y analíticas que permitan visualizar e interactuar con estos algoritmos de consenso de manera intuitiva. A través del desarrollo de una plataforma de visualización interactiva, se pretende facilitar tanto el aprendizaje académico como el análisis técnico de estos sistemas complejos.
+
+\section{Fundamentación de la Propuesta}
+
+\subsection{Pilares Fundamentales}
+
+La solución propuesta se sustenta en cuatro pilares fundamentales que garantizan su efectividad y relevancia:
+
+\begin{enumerate}
+    \item \textbf{Visualización Interactiva}: Implementación de interfaces gráficas dinámicas que permiten observar el comportamiento de los algoritmos en tiempo real, facilitando la comprensión de conceptos abstractos mediante representaciones visuales concretas.
+    
+    \item \textbf{Simulación en Tiempo Real}: Desarrollo de motores de simulación que recrean fielmente el comportamiento de redes blockchain bajo diferentes condiciones y parámetros, permitiendo experimentación controlada sin costos operacionales.
+    
+    \item \textbf{Análisis Comparativo}: Implementación de métricas y herramientas de comparación que permiten evaluar objetivamente las ventajas y desventajas de cada algoritmo en escenarios específicos.
+    
+    \item \textbf{Accesibilidad Educativa}: Diseño de una interfaz intuitiva que facilite el acceso tanto a estudiantes como a profesionales, con diferentes niveles de profundidad técnica según las necesidades del usuario.
+\end{enumerate}
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Desarrollar módulos de visualización específicos para PoW, PoS y PBFT que muestren sus características distintivas
+    \item Implementar simulaciones que demuestren el comportamiento bajo condiciones adversas (ataques del 51\%, fallos bizantinos, etc.)
+    \item Crear herramientas de análisis que permitan comparar métricas clave como throughput, latencia, consumo energético y tolerancia a fallos
+    \item Establecer una plataforma educativa que facilite la comprensión de conceptos complejos mediante experiencias interactivas
+\end{itemize}
+
+\section{Análisis de Algoritmos de Consenso}
+
+\subsection{Proof of Work (PoW)}
+
+\subsubsection{Características Fundamentales}
+
+El algoritmo Proof of Work, popularizado por Bitcoin, basa su seguridad en la dificultad computacional de resolver problemas criptográficos \cite{nakamoto2008bitcoin}. Los mineros compiten por encontrar un nonce que, combinado con los datos del bloque, produzca un hash que cumpla con el criterio de dificultad establecido.
+
+\subsubsection{Ventajas y Desventajas}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+\textbf{Ventajas} & \textbf{Desventajas} \\
+\hline
+Alta seguridad demostrada & Elevado consumo energético \\
+Descentralización efectiva & Baja escalabilidad (7 TPS en Bitcoin) \\
+Resistencia a ataques del 51\% & Vulnerabilidad a mining pools \\
+Inmutabilidad histórica & Tiempo de confirmación lento \\
+\hline
+\end{tabular}
+\caption{Análisis comparativo de PoW}
+\label{tab:pow-comparison}
+\end{table}
+
+\subsubsection{Vulnerabilidades Principales}
+
+\begin{enumerate}
+    \item \textbf{Ataques del 51\%}: Cuando un actor malicioso controla más del 50\% del poder de hash de la red
+    \item \textbf{Selfish Mining}: Estrategia donde los mineros retienen bloques para obtener ventajas injustas
+    \item \textbf{Centralización de Mining Pools}: Concentración del poder de hash en pocas entidades
+\end{enumerate}
+
+\subsection{Proof of Stake (PoS)}
+
+\subsubsection{Mecanismo de Funcionamiento}
+
+En PoS, los validadores son seleccionados para crear nuevos bloques basándose en su participación (stake) en la red, eliminando la necesidad de competencia computacional intensiva \cite{king2012ppcoin}. Este enfoque reduce significativamente el consumo energético mientras mantiene la seguridad del sistema.
+
+\subsubsection{Ventajas y Limitaciones}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+\textbf{Ventajas} & \textbf{Limitaciones} \\
+\hline
+Eficiencia energética superior & Problema de "nothing at stake" \\
+Mayor escalabilidad & Concentración de riqueza \\
+Tiempo de finalización más rápido & Ataques de long-range \\
+Menor barrera de entrada & Complejidad de implementación \\
+\hline
+\end{tabular}
+\caption{Análisis comparativo de PoS}
+\label{tab:pos-comparison}
+\end{table}
+
+\subsubsection{Mecanismos de Seguridad}
+
+\begin{itemize}
+    \item \textbf{Slashing}: Penalización económica por comportamiento malicioso
+    \item \textbf{Checkpointing}: Puntos de control que previenen ataques de reorganización
+    \item \textbf{Randomización}: Selección pseudoaleatoria de validadores
+\end{itemize}
+
+\subsection{Practical Byzantine Fault Tolerance (PBFT)}
+
+\subsubsection{Fundamentos Teóricos}
+
+PBFT resuelve el problema del consenso bizantino en sistemas distribuidos, tolerando hasta $(n-1)/3$ nodos maliciosos en una red de $n$ nodos \cite{castro1999practical}. Su diseño garantiza la consistencia y liveness incluso en presencia de fallos arbitrarios.
+
+\subsubsection{Fases del Protocolo}
+
+\begin{enumerate}
+    \item \textbf{Pre-prepare}: El nodo primario propone un bloque
+    \item \textbf{Prepare}: Los nodos validan y votan por la propuesta
+    \item \textbf{Commit}: Se confirma el consenso y se ejecuta la transacción
+\end{enumerate}
+
+\subsubsection{Aplicaciones y Limitaciones}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+\textbf{Aplicaciones} & \textbf{Limitaciones} \\
+\hline
+Redes permisionadas & Escalabilidad limitada \\
+Entornos empresariales & Complejidad de comunicación O(n²) \\
+Sistemas críticos & Dependencia del nodo primario \\
+Hyperledger Fabric & Vulnerabilidad a ataques Sybil \\
+\hline
+\end{tabular}
+\caption{Aplicaciones y limitaciones de PBFT}
+\label{tab:pbft-comparison}
+\end{table}
+
+\section{Diseño de la Herramienta de Visualización}
+
+\subsection{Arquitectura del Sistema}
+
+La herramienta propuesta adopta una arquitectura modular de tres capas que garantiza escalabilidad, mantenibilidad y extensibilidad:
+
+\subsubsection{Capa de Presentación (Frontend)}
+
+\begin{itemize}
+    \item \textbf{Framework}: React.js con TypeScript para robustez y mantenibilidad
+    \item \textbf{Visualización}: D3.js para gráficos interactivos y Three.js para representaciones 3D
+    \item \textbf{UI/UX}: Material-UI para consistencia visual y responsive design
+    \item \textbf{Estado}: Redux para gestión centralizada del estado de la aplicación
+\end{itemize}
+
+\subsubsection{Capa de Lógica de Negocio (Backend)}
+
+\begin{itemize}
+    \item \textbf{Runtime}: Node.js con Express.js para APIs RESTful
+    \item \textbf{WebSockets}: Socket.io para comunicación en tiempo real
+    \item \textbf{Simulación}: Motores de consenso implementados en JavaScript/TypeScript
+    \item \textbf{Métricas}: Sistema de recolección y análisis de datos de rendimiento
+\end{itemize}
+
+\subsubsection{Capa de Datos}
+
+\begin{itemize}
+    \item \textbf{Base de datos}: MongoDB para almacenamiento flexible de configuraciones
+    \item \textbf{Cache}: Redis para datos de simulación en tiempo real
+    \item \textbf{Archivos}: Sistema de logs para análisis posterior
+\end{itemize}
+
+\subsection{Módulos Funcionales}
+
+\subsubsection{Módulo de Simulación}
+
+Implementa los motores de consenso que recrean fielmente el comportamiento de cada algoritmo:
+
+\begin{itemize}
+    \item \textbf{Motor PoW}: Simula el proceso de minería, ajuste de dificultad y propagación de bloques
+    \item \textbf{Motor PoS}: Modela la selección de validadores, staking y slashing
+    \item \textbf{Motor PBFT}: Implementa las fases del protocolo y manejo de fallos bizantinos
+\end{itemize}
+
+\subsubsection{Módulo de Visualización}
+
+Proporciona representaciones gráficas interactivas adaptadas a cada algoritmo:
+
+\begin{itemize}
+    \item \textbf{Vista de Red}: Topología de nodos con estados en tiempo real
+    \item \textbf{Vista de Bloques}: Cadena de bloques con métricas de validación
+    \item \textbf{Vista de Métricas}: Dashboards con KPIs comparativos
+    \item \textbf{Vista de Ataques}: Simulación visual de vulnerabilidades
+\end{itemize}
+
+\subsubsection{Módulo de Análisis}
+
+Herramientas avanzadas para evaluación cuantitativa:
+
+\begin{itemize}
+    \item \textbf{Métricas de Rendimiento}: TPS, latencia, throughput
+    \item \textbf{Análisis de Seguridad}: Resistencia a ataques, puntos de fallo
+    \item \textbf{Eficiencia Energética}: Comparación de consumo computacional
+    \item \textbf{Escalabilidad}: Comportamiento bajo diferentes cargas de trabajo
+\end{itemize}
+
+\section{Contextualización con Herramientas Existentes}
+
+\subsection{Análisis del Estado del Arte}
+
+Existen diversas herramientas de visualización blockchain en el mercado, cada una con enfoques y limitaciones específicas:
+
+\subsubsection{Herramientas Comerciales}
+
+\begin{itemize}
+    \item \textbf{EY Blockchain Analyzer}: Enfocado en análisis forense y auditoría \cite{ey_blockchain_analyzer}
+    \item \textbf{Chainalysis}: Especializado en análisis de transacciones y compliance
+    \item \textbf{Elliptic}: Orientado a detección de actividades ilícitas
+\end{itemize}
+
+\subsubsection{Herramientas Académicas}
+
+\begin{itemize}
+    \item \textbf{Bonaparte's Interactive Consensus}: Visualización web básica de consenso \cite{bonaparte_interactive_consensus}
+    \item \textbf{SimBlock}: Simulador de blockchain para investigación
+    \item \textbf{Raft Consensus Simulator}: Específico para el algoritmo Raft \cite{raft_consensus_simulator}
+\end{itemize}
+
+\subsection{Ventajas Competitivas}
+
+La propuesta presenta las siguientes ventajas diferenciadas:
+
+\begin{enumerate}
+    \item \textbf{Enfoque Educativo}: Diseñada específicamente para aprendizaje y enseñanza
+    \item \textbf{Múltiples Algoritmos}: Comparación directa entre PoW, PoS y PBFT
+    \item \textbf{Interactividad Avanzada}: Manipulación de parámetros en tiempo real
+    \item \textbf{Código Abierto}: Accesibilidad y extensibilidad comunitaria
+    \item \textbf{Métricas Integrales}: Análisis holístico de rendimiento y seguridad
+\end{enumerate}
+
+\section{Tabla Comparativa de Algoritmos}
+
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{Criterio} & \textbf{Proof of Work} & \textbf{Proof of Stake} & \textbf{PBFT} & \textbf{Optimal} \\
+\hline
+\textbf{Consumo Energético} & Muy Alto & Bajo & Medio & Bajo \\
+\hline
+\textbf{Escalabilidad (TPS)} & 7-15 & 1000+ & 100-1000 & 10000+ \\
+\hline
+\textbf{Tiempo de Finalización} & 60+ min & 12-32 seg & 1-3 seg & <1 seg \\
+\hline
+\textbf{Tolerancia a Fallos} & 49\% & 33\% & 33\% & 33\% \\
+\hline
+\textbf{Descentralización} & Alta & Media & Baja & Alta \\
+\hline
+\textbf{Barrera de Entrada} & Media & Baja & Alta & Baja \\
+\hline
+\textbf{Madurez Tecnológica} & Alta & Media & Alta & Baja \\
+\hline
+\textbf{Casos de Uso} & Criptomonedas & DeFi, Smart Contracts & Empresarial & Experimental \\
+\hline
+\end{tabular}
+\caption{Comparación integral de algoritmos de consenso}
+\label{tab:consensus-comparison}
+\end{table}
+
+\section{Implementación y Desarrollo}
+
+\subsection{Metodología de Desarrollo}
+
+La implementación seguirá una metodología ágil con las siguientes fases:
+
+\begin{enumerate}
+    \item \textbf{Fase 1}: Desarrollo de motores de simulación básicos
+    \item \textbf{Fase 2}: Implementación de interfaces de visualización
+    \item \textbf{Fase 3}: Integración de módulos de análisis y métricas
+    \item \textbf{Fase 4}: Testing, optimización y documentación
+\end{enumerate}
+
+\subsection{Tecnologías Implementadas}
+
+\subsubsection{Stack Tecnológico}
+
+\begin{itemize}
+    \item \textbf{Frontend}: React 18+ con TypeScript, D3.js, Three.js
+    \item \textbf{Backend}: Node.js, Express.js, Socket.io
+    \item \textbf{Base de Datos}: MongoDB, Redis
+    \item \textbf{DevOps}: Docker, GitHub Actions, AWS/Azure
+    \item \textbf{Testing}: Jest, Cypress, Performance testing
+\end{itemize}
+
+\subsection{Métricas de Evaluación}
+
+La efectividad de la herramienta será evaluada mediante:
+
+\begin{itemize}
+    \item \textbf{Usabilidad}: Encuestas SUS (System Usability Scale)
+    \item \textbf{Precisión}: Comparación con implementaciones reales
+    \item \textbf{Rendimiento}: Métricas de respuesta y carga
+    \item \textbf{Educacional}: Evaluación de aprendizaje en usuarios
+\end{itemize}
+
+\section{Conclusiones del Capítulo}
+
+La propuesta de herramienta de visualización interactiva para algoritmos de consenso blockchain representa una contribución significativa tanto al ámbito educativo como al análisis técnico de sistemas distribuidos. Su arquitectura modular, enfoque comparativo y características interactivas la posicionan como una solución innovadora que aborda las limitaciones de las herramientas existentes.
+
+La combinación de simulación en tiempo real, visualización avanzada y análisis métrico proporciona una plataforma integral para la comprensión y evaluación de los algoritmos de consenso más relevantes en la actualidad. Su desarrollo utilizando tecnologías web modernas garantiza accesibilidad, escalabilidad y facilidad de mantenimiento.
+
+Los resultados esperados incluyen una mejora significativa en la comprensión de conceptos complejos de blockchain, facilitar la toma de decisiones técnicas informadas y contribuir al avance del estado del arte en herramientas educativas para tecnologías distribuidas.
+
+\chapter{Conclusiones Generales}
+
+\textit{Este capítulo final sintetiza los logros alcanzados en la investigación, evalúa las contribuciones principales en los ámbitos educativo, técnico y metodológico, analiza el impacto esperado de la herramienta propuesta, identifica las limitaciones del trabajo actual y propone líneas futuras de investigación y desarrollo.}
+
+Este trabajo de investigación ha desarrollado una propuesta integral para la visualización interactiva de algoritmos de consenso en blockchain, abordando una necesidad crítica en el ámbito educativo y profesional de las tecnologías distribuidas.
+
+\section{Logros Alcanzados}
+
+A través del desarrollo de esta monografía se han conseguido los siguientes logros principales:
+
+\subsection{Análisis Comprehensivo de Algoritmos de Consenso}
+
+Se realizó un estudio detallado de los principales mecanismos de consenso utilizados en blockchain, incluyendo Proof of Work (PoW), Proof of Stake (PoS) y Practical Byzantine Fault Tolerance (PBFT). Este análisis permitió identificar las fortalezas, debilidades y casos de uso específicos de cada algoritmo, proporcionando una base sólida para el diseño de la herramienta de visualización.
+
+\subsection{Diseño de Arquitectura Innovadora}
+
+La propuesta arquitectónica desarrollada combina tecnologías web modernas con técnicas avanzadas de visualización, creando una solución escalable y accesible. La arquitectura modular propuesta facilita la extensibilidad del sistema y permite la incorporación futura de nuevos algoritmos de consenso.
+
+\subsection{Marco Comparativo Integral}
+
+Se estableció un marco de comparación sistemático que permite evaluar algoritmos de consenso bajo múltiples dimensiones: seguridad, escalabilidad, eficiencia energética, descentralización y tolerancia a fallos. Este marco constituye una contribución metodológica valiosa para la investigación en blockchain.
+
+\section{Contribuciones Principales}
+
+\subsection{Contribución Educativa}
+
+La herramienta propuesta llena un vacío significativo en el ecosistema educativo de blockchain, proporcionando:
+
+\begin{itemize}
+    \item Visualización interactiva que facilita la comprensión de conceptos abstractos
+    \item Simulaciones en tiempo real que permiten observar el comportamiento dinámico de los algoritmos
+    \item Interfaz intuitiva que hace accesible el conocimiento especializado a diferentes audiencias
+\end{itemize}
+
+\subsection{Contribución Técnica}
+
+Desde el punto de vista técnico, el trabajo aporta:
+
+\begin{itemize}
+    \item Una arquitectura de referencia para herramientas de visualización de sistemas distribuidos
+    \item Metodología de simulación que balancea precisión técnica con comprensibilidad
+    \item Framework de evaluación comparativa aplicable a nuevos algoritmos de consenso
+\end{itemize}
+
+\subsection{Contribución Metodológica}
+
+El enfoque metodológico desarrollado incluye:
+
+\begin{itemize}
+    \item Proceso sistemático de análisis de algoritmos de consenso
+    \item Criterios de evaluación multidimensionales
+    \item Métricas de usabilidad específicas para herramientas educativas técnicas
+\end{itemize}
+
+\section{Impacto Esperado}
+
+\subsection{En el Ámbito Educativo}
+
+Se espera que la implementación de esta propuesta genere:
+
+\begin{itemize}
+    \item Mejora significativa en la comprensión de algoritmos de consenso por parte de estudiantes y profesionales
+    \item Reducción del tiempo de aprendizaje de conceptos complejos de blockchain
+    \item Incremento en la calidad de la educación en tecnologías distribuidas
+\end{itemize}
+
+\subsection{En el Ámbito Profesional}
+
+Para profesionales del sector, la herramienta proporcionará:
+
+\begin{itemize}
+    \item Apoyo en la toma de decisiones técnicas informadas
+    \item Capacidad de evaluación comparativa rápida de algoritmos
+    \item Herramienta de comunicación técnica para equipos multidisciplinarios
+\end{itemize}
+
+\subsection{En el Ámbito de Investigación}
+
+La contribución a la investigación incluye:
+
+\begin{itemize}
+    \item Base para el desarrollo de nuevas herramientas de visualización
+    \item Marco de referencia para estudios comparativos de algoritmos de consenso
+    \item Plataforma de experimentación para investigadores en blockchain
+\end{itemize}
+
+\section{Limitaciones y Trabajo Futuro}
+
+\subsection{Limitaciones Identificadas}
+
+Es importante reconocer las limitaciones del trabajo actual:
+
+\begin{itemize}
+    \item \textbf{Alcance de Algoritmos}: La propuesta se centra en tres algoritmos principales, pudiendo expandirse a otros mecanismos como Proof of Authority (PoA) o Delegated Proof of Stake (DPoS)
+    \item \textbf{Complejidad de Implementación}: Algunos aspectos técnicos requerirán simplificación para mantener la accesibilidad educativa
+    \item \textbf{Validación Empírica}: La efectividad de la herramienta requiere validación através de estudios de usabilidad extensivos
+\end{itemize}
+
+\subsection{Líneas de Trabajo Futuro}
+
+Las siguientes áreas representan oportunidades de extensión del trabajo:
+
+\subsubsection{Expansión de Algoritmos}
+
+\begin{itemize}
+    \item Incorporación de algoritmos híbridos y emergentes
+    \item Análisis de mecanismos de consenso específicos por industria
+    \item Integración de protocolos de segunda capa (Layer 2)
+\end{itemize}
+
+\subsubsection{Mejoras Tecnológicas}
+
+\begin{itemize}
+    \item Implementación de realidad virtual/aumentada para inmersión educativa
+    \item Desarrollo de versión móvil para accesibilidad ampliada
+    \item Integración con plataformas de aprendizaje existentes (LMS)
+\end{itemize}
+
+\subsubsection{Investigación Empírica}
+
+\begin{itemize}
+    \item Estudios longitudinales de efectividad educativa
+    \item Análisis de patrones de uso y comportamiento de aprendizaje
+    \item Validación con diferentes grupos demográficos y niveles de experiencia
+\end{itemize}
+
+\section{Reflexiones Finales}
+
+La tecnología blockchain continúa evolucionando rápidamente, y con ella, la complejidad de sus mecanismos de consenso. La necesidad de herramientas educativas que faciliten la comprensión de estos conceptos se vuelve cada vez más crítica. Este trabajo representa un paso importante hacia la democratización del conocimiento en blockchain, haciendo accesibles conceptos técnicos complejos a través de la visualización interactiva.
+
+La propuesta desarrollada no solo aborda las necesidades actuales del mercado educativo, sino que también establece las bases para futuras innovaciones en la enseñanza de tecnologías distribuidas. Su enfoque modular y escalable permite la adaptación continua a los avances del campo, asegurando su relevancia a largo plazo.
+
+El éxito de esta iniciativa contribuirá significativamente al desarrollo de profesionales mejor capacitados en blockchain, impulsando la adopción responsable y efectiva de estas tecnologías en diversos sectores de la economía digital.
+
+La visualización interactiva de algoritmos de consenso representa, por tanto, no solo una herramienta educativa, sino un puente hacia un futuro donde la tecnología blockchain sea más comprensible, accesible y correctamente implementada por profesionales de todo el mundo.
 
 \printbibliography
 \end{document}
