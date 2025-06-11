@@ -76,7 +76,7 @@ VISUALIZACIÓN INTERACTIVA DE ALGORITMOS DE CONSENSO EN BLOCKCHAIN
 \begin{abstract}
 La tecnología blockchain ha revolucionado múltiples sectores gracias a sus algoritmos de consenso, que garantizan la integridad y confiabilidad de los datos en redes distribuidas. Sin embargo, la comprensión de estos mecanismos complejos presenta desafíos significativos para estudiantes, investigadores y profesionales del área. Esta monografía presenta el diseño e implementación de una herramienta de visualización interactiva que facilita el entendimiento de los principales algoritmos de consenso: Proof of Work (PoW), Proof of Stake (PoS) y Practical Byzantine Fault Tolerance (PBFT).
 
-La propuesta aborda la necesidad de recursos educativos y analíticos especializados mediante una plataforma web que combina simulación en tiempo real, visualización dinámica y análisis comparativo. La herramienta utiliza tecnologías modernas como React.js, D3.js y Node.js para proporcionar una experiencia interactiva que permite manipular parámetros, observar comportamientos algorítmicos y evaluar métricas de rendimiento.
+La propuesta aborda la necesidad de recursos educativos y analíticos especializados mediante una plataforma web que combina simulación en tiempo real, visualización dinámica y análisis comparativo. La herramienta utiliza tecnologías modernas como React.js, D3.js, Three.js para proporcionar una experiencia interactiva que permite manipular parámetros, observar comportamientos algorítmicos y evaluar métricas de rendimiento.
 
 Los resultados esperados incluyen una mejora significativa en la comprensión de conceptos blockchain complejos, facilitación del proceso de enseñanza-aprendizaje en entornos académicos, y provisión de herramientas analíticas para la evaluación técnica de sistemas distribuidos. La investigación contribuye al estado del arte en herramientas educativas para tecnologías emergentes y establece bases para futuras investigaciones en visualización de sistemas distribuidos.
 
@@ -95,6 +95,7 @@ Los resultados esperados incluyen una mejora significativa en la comprensión de
 \chapter{Perfil del proyecto}
 
 \textit{Este capítulo establece el marco inicial de la investigación, presentando la contextualización del problema, los objetivos generales y específicos, y la justificación académica y práctica del desarrollo de una herramienta de visualización interactiva para algoritmos de consenso en blockchain.}
+\newpage
 
 \section{Introducción}
 La presente monografía se centra en el diseño e implementación de una herramienta de visualización interactiva para algoritmos de consenso en blockchain. Esta tecnología, que ha trascendido su aplicación original en criptomonedas, encuentra aplicaciones en sectores como finanzas, cadenas de suministro, salud e IoT \parencite{businesswire2025blockchain}.
@@ -163,16 +164,17 @@ Diseñar e implementar una herramienta de visualización interactiva basada en w
     
     \item Diseñar la arquitectura de software especificando módulos principales, interacciones, estructuras de datos y UI/UX para asegurar efectividad educativa y analítica.
     
-    \item Implementar la herramienta como aplicación web utilizando tecnologías modernas (JavaScript, React, D3.js).
+    \item Implementar la herramienta como aplicación web utilizando tecnologías modernas (JavaScript, React, D3.js, Three.js).
     
     \item Desarrollar funcionalidades de simulación interactiva para diferentes configuraciones, latencia variable, bifurcaciones, fallos de nodos y ataques comunes.
-    
-    \item Evaluar efectividad mediante pruebas con usuarios objetivo, recopilando feedback sobre impacto en comprensión y capacidad analítica.
+
 \end{enumerate}
 
 \chapter{Marco Teórico}
 
 \textit{Este capítulo desarrolla los fundamentos teóricos necesarios para comprender la tecnología blockchain y los algoritmos de consenso. Se examinan los principios de descentralización, inmutabilidad y transparencia, así como los desafíos del consenso distribuido, el problema de los Generales Bizantinos, y las técnicas de visualización interactiva aplicadas a sistemas complejos.}
+
+\newpage
 
 \section{Fundamentos de la Tecnología Blockchain y el Consenso Distribuido}
 
@@ -502,7 +504,8 @@ Una herramienta efectiva debe permitir explorar escenarios anómalos:
 \textbf{Bibliotecas de Visualización:}
 \begin{itemize}
     \item \textbf{D3.js:} Biblioteca extremadamente potente para crear visualizaciones dinámicas e interactivas personalizadas \parencite{d3js2025}.
-    \item \textbf{Vis.js:} Maneja bien redes, líneas de tiempo y datos jerárquicos.
+    \item \textbf{Three.js:} Para gráficos 3D y visualizaciones complejas \parencite{threejs2025}.
+
     \item \textbf{Chart.js, Recharts:} Para gráficos estándar y métricas agregadas.
 \end{itemize}
 
@@ -532,6 +535,8 @@ El desarrollo debe seguir un enfoque modular, donde la lógica de cada algoritmo
 
 \textit{Este capítulo presenta la propuesta técnica completa para el desarrollo de la herramienta de visualización interactiva. Incluye el análisis detallado de los algoritmos de consenso PoW, PoS y PBFT, el diseño arquitectónico de la aplicación web, la especificación de funcionalidades interactivas, y la contextualización con herramientas existentes en el mercado.}
 
+\newpage
+
 \section{Introducción}
 
 Los algoritmos de consenso constituyen el núcleo fundamental de la tecnología blockchain, determinando cómo los nodos de una red distribuida alcanzan acuerdos sobre el estado de la cadena de bloques sin depender de una autoridad central \cite{nakamoto2008bitcoin}. La comprensión profunda de estos mecanismos es crucial para el desarrollo, implementación y optimización de sistemas blockchain, especialmente considerando las diferencias significativas en términos de seguridad, escalabilidad y eficiencia energética entre algoritmos como Proof of Work (PoW), Proof of Stake (PoS) y Practical Byzantine Fault Tolerance (PBFT).
@@ -553,15 +558,6 @@ La solución propuesta se sustenta en cuatro pilares fundamentales que garantiza
     
     \item \textbf{Accesibilidad Educativa}: Diseño de una interfaz intuitiva que facilite el acceso tanto a estudiantes como a profesionales, con diferentes niveles de profundidad técnica según las necesidades del usuario.
 \end{enumerate}
-
-\subsection{Objetivos Específicos}
-
-\begin{itemize}
-    \item Desarrollar módulos de visualización específicos para PoW, PoS y PBFT que muestren sus características distintivas
-    \item Implementar simulaciones que demuestren el comportamiento bajo condiciones adversas (ataques del 51\%, fallos bizantinos, etc.)
-    \item Crear herramientas de análisis que permitan comparar métricas clave como throughput, latencia, consumo energético y tolerancia a fallos
-    \item Establecer una plataforma educativa que facilite la comprensión de conceptos complejos mediante experiencias interactivas
-\end{itemize}
 
 \section{Análisis de Algoritmos de Consenso}
 
@@ -672,7 +668,7 @@ La herramienta propuesta adopta una arquitectura modular de tres capas que garan
 \begin{itemize}
     \item \textbf{Framework}: React.js con TypeScript para robustez y mantenibilidad
     \item \textbf{Visualización}: D3.js para gráficos interactivos y Three.js para representaciones 3D
-    \item \textbf{UI/UX}: Material-UI para consistencia visual y responsive design
+    \item \textbf{UI/UX}: Tailwind CSS para consistencia visual y responsive design
     \item \textbf{Estado}: Redux para gestión centralizada del estado de la aplicación
 \end{itemize}
 
@@ -838,9 +834,7 @@ Los resultados esperados incluyen una mejora significativa en la comprensión de
 \chapter{Conclusiones Generales}
 
 \textit{Este capítulo final sintetiza los logros alcanzados en la investigación, evalúa las contribuciones principales en los ámbitos educativo, técnico y metodológico, analiza el impacto esperado de la herramienta propuesta, identifica las limitaciones del trabajo actual y propone líneas futuras de investigación y desarrollo.}
-
-Este trabajo de investigación ha desarrollado una propuesta integral para la visualización interactiva de algoritmos de consenso en blockchain, abordando una necesidad crítica en el ámbito educativo y profesional de las tecnologías distribuidas.
-
+\newpage
 \section{Logros Alcanzados}
 
 A través del desarrollo de esta monografía se han conseguido los siguientes logros principales:
