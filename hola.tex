@@ -12,15 +12,34 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[ruled,vlined,spanish]{algorithm2e}
 \addbibresource{biblio.bib}
 \DeclareLanguageMapping{spanish}{spanish-apa}
-\geometry{letterpaper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\geometry{letterpaper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm, headheight=16pt}
 \setlength{\parindent}{1.27cm}
 \setlength{\parskip}{0pt}
+
+% Configuración para algoritmos respetando márgenes
+\SetKwComment{Comment}{/* }{ */}
+\SetAlgoNoLine
+\SetAlgoVlined
+\SetAlFnt{\small}
 
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3} 
 \let\showframe\relax
+
+% Configuración de encabezados
+\pagestyle{fancy}
+\fancyhf{} % Limpiar todos los encabezados y pies de página
+\fancyhead[C]{\leftmark} % Encabezado centrado con el nombre del capítulo
+\fancyfoot[C]{\thepage} % Número de página centrado en el pie
+\renewcommand{\headrulewidth}{0.4pt} % Línea del encabezado
+\renewcommand{\footrulewidth}{0pt} % Sin línea en el pie
+
+% Redefinir \chaptermark para incluir el número y nombre del capítulo
+\renewcommand{\chaptermark}[1]{\markboth{Capítulo \thechapter: #1}{}}
 
 % --- CUERPO DEL DOCUMENTO ---
 \begin{document}
@@ -65,10 +84,55 @@ VISUALIZACIÓN INTERACTIVA DE ALGORITMOS DE CONSENSO EN BLOCKCHAIN
 
 % Lugar y fecha
 {\large\bfseries Santa Cruz – Bolivia}\\[0.2cm]
-{\large\bfseries Mayo – \the\year}
+{\large\bfseries Junio – \the\year}
 \end{titlepage}
 
+% =============== DEDICATORIA ===============
+\newpage
+\thispagestyle{empty}
+\vspace*{5cm}
+\begin{center}
+\textbf{\Large DEDICATORIA}
+\end{center}
+\vspace{2cm}
 
+\begin{flushright}
+\textit{A todas las personas que creyeron en mí y nunca dejaron de apoyarme en este camino académico y profesional.}
+
+\vspace{1cm}
+
+\textit{A la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones, que me permitió desarrollarme profesionalmente y me brindó las herramientas para alcanzar mis metas.}
+
+\vspace{1cm}
+
+\textit{A mis padres, por su amor incondicional y por enseñarme que con esfuerzo y dedicación todo es posible.}
+
+\vspace{1cm}
+
+\textit{A quienes inspiran mi búsqueda constante del conocimiento y la excelencia académica.}
+\end{flushright}
+
+% =============== AGRADECIMIENTOS ===============
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\textbf{\Large AGRADECIMIENTOS}
+\end{center}
+\doublespacing
+
+Deseo expresar mi más sincero reconocimiento a la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones (FICCT) de la Universidad Autónoma Gabriel René Moreno, institución que ha sido el cimiento de mi formación académica y profesional. Esta casa de estudios no solamente me otorgó la oportunidad de realizar este trabajo de investigación, sino que también me proporcionó un ambiente de excelencia académica que favoreció mi crecimiento intelectual.
+
+Mi profunda gratitud se dirige igualmente hacia la Unidad de Postgrado "School of Engineering" de la UAGRM, cuyo prestigio académico y recursos especializados han constituido elementos fundamentales en mi desarrollo como profesional en el área de la computación y las telecomunicaciones.
+
+Extiendo un reconocimiento especial al distinguido cuerpo docente de la Facultad de Ingeniería en Ciencias de la Computación, profesionales que han demostrado un compromiso inquebrantable con la formación integral de los estudiantes. Su orientación académica, dedicación pedagógica y valiosas contribuciones han sido determinantes en mi trayectoria universitaria y en la consolidación de mis conocimientos técnicos.
+
+Quiero manifestar mi más profundo agradecimiento a mi familia, cuyo apoyo incondicional, comprensión y fortaleza emocional han sido mi principal sostén durante todo este proceso académico. Su confianza en mis capacidades ha sido una fuente inagotable de motivación.
+
+A mis compañeros y amigos, por su constante aliento, colaboración y compañerismo en cada etapa de este recorrido académico. Su presencia ha enriquecido mi experiencia universitaria y ha hecho más gratificante este camino hacia el logro de mis objetivos profesionales.
+
+A todos aquellos que, de una u otra manera, han contribuido significativamente a la realización exitosa de este trabajo de investigación, mi más sincero y profundo agradecimiento.
+
+\newpage
 
 \doublespacing
 
@@ -85,14 +149,18 @@ Los resultados esperados incluyen una mejora significativa en la comprensión de
 
 \newpage
 
+\pagestyle{plain} % Elimina encabezado y solo deja número de página centrado abajo
 \tableofcontents
 \newpage
-
+\pagestyle{fancy}
 % =============== ÍNDICE DE TABLAS ===============
 \listoftables
 \newpage
 
-\chapter{Perfil del proyecto}
+% Activar encabezados personalizados para el contenido principal
+\pagestyle{fancy}
+
+\chapter{Perfil del Proyecto}
 
 \textit{Este capítulo establece el marco inicial de la investigación, presentando la contextualización del problema, los objetivos generales y específicos, y la justificación académica y práctica del desarrollo de una herramienta de visualización interactiva para algoritmos de consenso en blockchain.}
 \newpage
@@ -115,7 +183,7 @@ Los algoritmos de consenso son protocolos que permiten a redes descentralizadas 
 
 El "Trilema de la Blockchain" ilustra la dificultad de optimizar simultáneamente escalabilidad, seguridad y descentralización. PoW ofrece seguridad pero consume mucha energía, mientras PoS es más eficiente pero puede tender a la centralización.
 
-\subsubsection{Principales Familias de Algoritmos}
+\subsubsection{Principales familias de algoritmos}
 \textbf{Proof of Work (PoW):} Mineros resuelven problemas matemáticos complejos. Altamente seguro pero consume mucha energía.
 
 \textbf{Proof of Stake (PoS):} Validadores seleccionados según su participación económica. Más eficiente energéticamente.
@@ -124,15 +192,15 @@ El "Trilema de la Blockchain" ilustra la dificultad de optimizar simultáneament
 
 \textbf{Delegated Proof of Stake (DPoS):} Los usuarios votan por delegados que validan transacciones, mejorando escalabilidad.
 
-\subsection{Visualización Interactiva como Herramienta Pedagógica}
+\subsection{Visualización interactiva como herramienta pedagógica}
 La visualización interactiva facilita la comprensión de sistemas complejos, mejorando la memoria, el reconocimiento de patrones y las operaciones de inferencia \parencite{researchgate2018towards}. Para conceptos abstractos como los algoritmos de consenso, la visualización ofrece una representación que es más fácil de recordar y permite la experimentación \parencite{stanford2025rodger}.
 
 El valor de las herramientas interactivas radica en permitir la participación activa, donde los usuarios pueden modificar parámetros y observar consecuencias directas. Este enfoque de "aprender haciendo" es crucial para desarrollar conocimiento tácito en campos abstractos como blockchain \parencite{chronicle2025impact}.
 
-\subsection{Estado del Arte}
+\subsection{Estado del arte}
 Existen diversas herramientas para visualización de algoritmos y blockchain, incluyendo simuladores de investigación como BFTSim y BlockEmulator, y visualizadores educativos como jiechen257/blockchain-visualizer y RaftScope \parencite{github2025jiechen257, raftgithub2025raft}. Sin embargo, se identifica una brecha: la falta de una herramienta integrada que combine necesidades educativas y analíticas para múltiples algoritmos de consenso principales.
 
-\section{Planteamiento del Problema}
+\subsection{Planteamiento del problema}
 Los algoritmos de consenso en blockchain son inherentemente complejos debido a su naturaleza abstracta y la multiplicidad de componentes que involucran. Esta complejidad obstaculiza la formación efectiva de profesionales y la capacidad de analizar críticamente la seguridad y rendimiento de las redes existentes.
 
 Las herramientas educativas actuales presentan limitaciones: los simuladores de investigación se enfocan en métricas de rendimiento más que en visualización pedagógica, mientras que las herramientas educativas tienden a ser específicas para un solo algoritmo. Se requiere un entorno interactivo que permita simular y analizar escenarios como ataques, bifurcaciones y fallos de nodos.
@@ -140,23 +208,23 @@ Las herramientas educativas actuales presentan limitaciones: los simuladores de 
 \textbf{Pregunta Central:} ¿Cómo puede una herramienta de visualización interactiva, desarrollada como aplicación web, mejorar significativamente la comprensión y análisis comparativo de los principales algoritmos de consenso en blockchain?
 
 \section{Justificación}
-\subsection{Relevancia Académica}
+\subsection{Relevancia académica}
 La investigación contribuye al conocimiento mediante: (1) síntesis y clarificación de algoritmos complejos para visualización, y (2) innovación en herramientas de investigación y pedagogía que pueden servir como plataforma para investigaciones futuras sobre comportamiento de algoritmos.
 
-\subsection{Impacto Educativo}
+\subsection{Impacto educativo}
 La herramienta aborda dificultades inherentes al aprendizaje mediante visualización interactiva que mejora la comprensión, permite aprendizaje activo, reduce la carga cognitiva y aumenta el compromiso estudiantil \parencite{researchgate2018towards, stanford2025rodger}.
 
-\subsection{Impacto Analítico}
+\subsection{Impacto analítico}
 Provee un entorno "sandbox" para experimentación, permitiendo simulación de escenarios críticos, análisis comparativo de algoritmos y desarrollo de contramedidas intuitivas contra vulnerabilidades.
 
-\subsection{Pertinencia de Aplicación Web}
+\subsection{Pertinencia de aplicación web}
 La implementación web ofrece accesibilidad universal, facilidad de uso y mantenimiento, y potencial para crear una comunidad colaborativa de aprendizaje.
 
 \section{Objetivos}
-\subsection{Objetivo General}
+\subsection{Objetivo general}
 Diseñar e implementar una herramienta de visualización interactiva basada en web para facilitar la comprensión teórica y análisis práctico de los principales algoritmos de consenso en blockchain (PoW, PoS, PBFT).
 
-\subsection{Objetivos Específicos}
+\subsection{Objetivos específicos}
 \begin{enumerate}
     \item Realizar una revisión teórica exhaustiva de los principales algoritmos de consenso, analizando evolución histórica, mecanismos fundamentales, seguridad, escalabilidad y eficiencia energética.
     
@@ -176,13 +244,13 @@ Diseñar e implementar una herramienta de visualización interactiva basada en w
 
 \newpage
 
-\section{Fundamentos de la Tecnología Blockchain y el Consenso Distribuido}
+\section{Fundamentos de la tecnología blockchain y el consenso distribuido}
 
-\subsection{Introducción a la Tecnología Blockchain}
+\subsection{Introducción a la tecnología blockchain}
 
-La tecnología blockchain se define como un libro de contabilidad digital que es inherentemente descentralizado, distribuido entre sus participantes y diseñado para ser inmutable \parencite{aws2025blockchain}. Esta tecnología emergió inicialmente como el sustento de las criptomonedas, como Bitcoin \parencite{nakamoto2008bitcoin}, pero su aplicabilidad se ha extendido a numerosos campos que requieren un registro seguro y transparente de transacciones o datos.
+La tecnología blockchain se define como un libro de contabilidad digital que es inherentemente descentalizado, distribuido entre sus participantes y diseñado para ser inmutable \parencite{aws2025blockchain}. Esta tecnología emergió inicialmente como el sustento de las criptomonedas, como Bitcoin \parencite{nakamoto2008bitcoin}, pero su aplicabilidad se ha extendido a numerosos campos que requieren un registro seguro y transparente de transacciones o datos.
 
-\subsubsection{Principios Fundamentales}
+\subsubsection{Principios fundamentales}
 
 Los principios fundamentales que sustentan la tecnología blockchain son la descentralización, la inmutabilidad y la transparencia \parencite{amores2020blockchain}:
 
@@ -192,7 +260,7 @@ Los principios fundamentales que sustentan la tecnología blockchain son la desc
 
 \textbf{Transparencia:} Implica que todos los participantes de la red tienen acceso al libro de contabilidad distribuido y a su registro inmutable de transacciones \parencite{ibm2025blockchain}. La transparencia en blockchain es selectiva y configurable. En redes permisionadas, los registros confidenciales pueden compartirse únicamente con miembros autorizados, mientras que las redes públicas pueden ofrecer información accesible para cualquiera, aunque de forma anónima.
 
-\subsubsection{Arquitectura de Blockchain}
+\subsubsection{Arquitectura de blockchain}
 
 La arquitectura de una blockchain se compone de varios elementos clave \parencite{bartolomeo2025intro}:
 
@@ -339,7 +407,7 @@ Han surgido numerosas variantes para superar las limitaciones del PBFT clásico 
 
 La elección de un algoritmo de consenso impacta directamente en la seguridad, rendimiento, descentralización y eficiencia energética del sistema. A continuación se presenta una comparación de las características principales:
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \caption{Comparación de Algoritmos de Consenso}
 \begin{tabular}{|l|p{3cm}|p{3cm}|p{3cm}|}
@@ -365,183 +433,214 @@ Tolerancia a Fallos & <50\% hashrate & <50\% stake & <1/3 nodos \\
 
 No existe un algoritmo de consenso universalmente superior; la elección óptima depende de los requisitos específicos de la aplicación blockchain. Este análisis revela el "trilema de la blockchain": es difícil optimizar simultáneamente la seguridad, la escalabilidad y la descentralización.
 
-\section{Visualización Interactiva para la Comprensión de Algoritmos de Consenso}
+\section{Implementación Algorítmica de Mecanismos de Consenso}
 
-\subsection{Principios Fundamentales de la Visualización de Datos}
+Esta sección presenta la implementación formal de los algoritmos de consenso analizados, proporcionando una base técnica detallada que facilita la comprensión de su funcionamiento interno y será fundamental para el desarrollo de la herramienta de visualización.
 
-El objetivo primordial de la visualización de datos es transformar información abstracta en narrativas visuales significativas, fáciles de comprender y que faciliten el aprendizaje \parencite{dev3lop2025visualization}. Para algoritmos complejos como los de consenso, la visualización debe simplificar los conjuntos de datos complejos y ayudar a revelar patrones que podrían permanecer ocultos en representaciones textuales.
+\subsection{Algoritmo Proof of Work (PoW)}
 
-\subsubsection{Principios de Diseño}
+\subsubsection{Proceso de Minería}
 
-Para lograr visualizaciones efectivas, el diseño se guía por varios principios fundamentales \parencite{thoughtspot2025principles}:
+El algoritmo PoW requiere que los mineros resuelvan un problema criptográfico computacionalmente intensivo. El siguiente algoritmo describe este proceso:
+
+\begin{algorithm}[H]
+\small
+\SetAlgoLined
+\KwData{Transacciones pendientes, bloque anterior, dificultad objetivo}
+\KwResult{Nuevo bloque válido agregado a la blockchain}
+\SetKwInOut{Input}{Entrada}\SetKwInOut{Output}{Salida}
+
+\Input{Lista de transacciones $T$, hash del bloque anterior $prev\_hash$, dificultad $difficulty$}
+\Output{Bloque válido $B$ con nonce válido}
+
+\BlankLine
+$nonce \leftarrow 0$\;
+$merkle\_root \leftarrow$ CalcularMerkleRoot($T$)\;
+$timestamp \leftarrow$ TiempoActual()\;
+
+\While{verdadero}{
+    $block\_header \leftarrow$ ConstruirHeader($prev\_hash$, $merkle\_root$, $timestamp$, $nonce$)\;
+    $hash \leftarrow$ SHA256(SHA256($block\_header$))\;
+    
+    \If{hash < $difficulty$}{
+        $B \leftarrow$ ConstruirBloque($block\_header$, $T$)\;
+        \textbf{retornar} $B$\;
+    }
+    
+    $nonce \leftarrow nonce + 1$\;
+    
+    \If{$nonce$ == MAX\_NONCE}{
+        $timestamp \leftarrow$ TiempoActual()\;
+        $nonce \leftarrow 0$\;
+    }
+}
+\caption{Algoritmo de Minería Proof of Work}
+\end{algorithm}
+
+\subsubsection{Análisis de Complejidad}
+
+La complejidad temporal del algoritmo PoW es probabilística y depende de la dificultad objetivo. En promedio, se requieren $2^{difficulty}$ intentos para encontrar un nonce válido, donde $difficulty$ es el número de ceros iniciales requeridos en el hash resultante.
+
+\subsection{Algoritmo Proof of Stake (PoS)}
+
+\subsubsection{Selección de Validadores}
+
+El mecanismo PoS utiliza un algoritmo probabilístico para seleccionar validadores basándose en su participación económica en la red:
+
+\begin{algorithm}[H]
+\small
+\SetAlgoLined
+\KwData{Lista de validadores con sus stakes, bloque anterior}
+\KwResult{Validador seleccionado para crear el siguiente bloque}
+\SetKwInOut{Input}{Entrada}\SetKwInOut{Output}{Salida}
+
+\Input{Conjunto de validadores $V = \{v_1, v_2, ..., v_n\}$, stakes $S = \{s_1, s_2, ..., s_n\}$, semilla aleatoria $seed$}
+\Output{Validador seleccionado $v_{selected}$}
+
+\BlankLine
+$total\_stake \leftarrow \sum_{i=1}^{n} s_i$\;
+$random\_value \leftarrow$ GenerarAleatorio($seed$, $total\_stake$)\;
+$accumulated\_stake \leftarrow 0$\;
+
+\For{$i = 1$ \KwTo $n$}{
+    $accumulated\_stake \leftarrow accumulated\_stake + s_i$\;
+    
+    \If{$random\_value \leq accumulated\_stake$}{
+        \If{EsValidadorElegible($v_i$)}{
+            $v_{selected} \leftarrow v_i$\;
+            \textbf{retornar} $v_{selected}$\;
+        }
+    }
+}
+
+\BlankLine
+\textbf{Función} EsValidadorElegible($v$):
+\Begin{
+    \If{$v$ no está en período de slashing \textbf{y} $v$ tiene stake mínimo}{
+        \textbf{retornar} verdadero\;
+    }
+    \textbf{retornar} falso\;
+}
+\caption{Algoritmo de Selección de Validadores en PoS}
+\end{algorithm}
+
+\subsubsection{Mecanismo de Penalizaciones (Slashing)}
+
+\begin{algorithm}[H]
+\small
+\SetAlgoLined
+\KwData{Evidencia de comportamiento malicioso}
+\KwResult{Aplicación de penalización al validador}
+\SetKwInOut{Input}{Entrada}\SetKwInOut{Output}{Salida}
+
+\Input{Validador $v$, tipo de falta $fault\_type$, evidencia $evidence$}
+\Output{Penalización aplicada y estado actualizado}
+
+\BlankLine
+\If{ValidarEvidencia($evidence$)}{
+    \Switch{$fault\_type$}{
+        \Case{DOUBLE\_SIGNING}{
+            $penalty \leftarrow 0.05 \times stake(v)$\;
+        }
+        \Case{DOWNTIME\_EXTENDED}{
+            $penalty \leftarrow 0.01 \times stake(v)$\;
+        }
+        \Case{FINALITY\_VIOLATION}{
+            $penalty \leftarrow 0.5 \times stake(v)$\;
+        }
+    }
+    
+    AplicarPenalizacion($v$, $penalty$)\;
+    ActualizarEstadoValidador($v$, SLASHED)\;
+    EmitirEvento(SLASHING\_EVENT, $v$, $penalty$)\;
+}
+\caption{Algoritmo de Slashing en PoS}
+\end{algorithm}
+
+\subsection{Algoritmo Practical Byzantine Fault Tolerance (PBFT)}
+
+\subsubsection{Protocolo de Consenso Principal}
+
+PBFT opera mediante un protocolo de tres fases que garantiza el consenso incluso con nodos bizantinos:
+
+\begin{algorithm}[H]
+\scriptsize
+\SetAlgoLined
+\SetKwInOut{Input}{Entrada}\SetKwInOut{Output}{Salida}
+\Input{Propuesta $B$, nodos $N = \{n_1, ..., n_k\}$, primario $p$}
+\Output{Bloque confirmado $B_{confirmed}$ o fallo}
+\BlankLine
+\textbf{Fase 1: Pre-prepare}
+\Begin{
+    \If{nodo actual == $p$}{EnviarMensaje(PRE\_PREPARE, $B$, seq, vista)\;}
+    \Else{EsperarMensaje(PRE\_PREPARE) de $p$\; \If{ValidarPropuesta($B$)}{$estado \leftarrow$ PREPARADO\;}}
+}
+\textbf{Fase 2: Prepare}
+\Begin{
+    \If{$estado$ == PREPARADO}{
+        EnviarMensaje(PREPARE, $B$, seq, vista)\; $votos\_prepare \leftarrow 1$\;
+        \While{$votos\_prepare < \lceil\frac{2n}{3}\rceil$}{
+            EsperarMensaje(PREPARE)\; \If{ValidarMensaje()}{$votos\_prepare++$\;}
+        }
+        $estado \leftarrow$ PREPARADO\_COMPLETO\;
+    }
+}
+\textbf{Fase 3: Commit}
+\Begin{
+    \If{$estado$ == PREPARADO\_COMPLETO}{
+        EnviarMensaje(COMMIT, $B$, seq, vista)\; $votos\_commit \leftarrow 1$\;
+        \While{$votos\_commit < \lceil\frac{2n}{3}\rceil$}{
+            EsperarMensaje(COMMIT)\; \If{ValidarMensaje()}{$votos\_commit++$\;}
+        }
+        EjecutarTransaccion($B$)\; \textbf{retornar} $B$\;
+    }
+}
+\caption{Protocolo de Consenso PBFT}
+\end{algorithm}
+
+\subsubsection{Algoritmo de Cambio de Vista}
+
+Cuando se detecta un fallo del nodo primario, PBFT ejecuta un protocolo de cambio de vista:
+
+\begin{algorithm}[H]
+\small
+\SetAlgoLined
+\SetKwInOut{Input}{Entrada}\SetKwInOut{Output}{Salida}
+\Input{Vista actual $view$, nodos $N$, timeout $timeout$}
+\Output{Nueva vista $new\_view$ con primario actualizado}
+\BlankLine
+\If{TimeoutAlcanzado() \textbf{o} PrimarioSospechoso()}{
+    $new\_view \leftarrow view + 1$\; $new\_primary \leftarrow N[new\_view \bmod |N|]$\;
+    EnviarMensaje(VIEW\_CHANGE, $new\_view$, evidencia\_fallo) a todos los nodos\;
+    $votos\_cambio \leftarrow 1$\;
+    \While{$votos\_cambio < \lceil\frac{2n}{3}\rceil$}{
+        EsperarMensaje(VIEW\_CHANGE)\; \If{ValidarCambioVista()}{$votos\_cambio \leftarrow votos\_cambio + 1$\;}
+    }
+    \If{nodo actual == $new\_primary$}{
+        EnviarMensaje(NEW\_VIEW, $new\_view$, estado\_consolidado) a todos los nodos\;
+    }
+    ActualizarVista($new\_view$)\; ReiniciarProtocoloConsenso()\;
+}
+\caption{Algoritmo de Cambio de Vista en PBFT}
+\end{algorithm}
+
+\subsubsection{Análisis de Tolerancia a Fallos}
+
+PBFT garantiza seguridad y liveness bajo las siguientes condiciones:
 
 \begin{itemize}
-    \item \textbf{Conocer a la Audiencia:} Identificar quién utilizará la visualización, sus objetivos y nivel de conocimiento previo.
-    \item \textbf{Simplicidad y Claridad:} Comunicar la información de manera clara y directa, evitando el desorden visual.
-    \item \textbf{Precisión e Integridad:} Representar los datos de manera veraz y fiable.
-    \item \textbf{Uso del Tipo de Gráfico Adecuado:} La elección debe estar alineada con la naturaleza de los datos.
-    \item \textbf{Uso Inteligente del Color:} Usar color de manera consistente y con propósito.
-    \item \textbf{Evitar el Desorden:} Permitir que el usuario descubra información progresivamente.
+    \item \textbf{Condición de Seguridad}: $f < \frac{n}{3}$, donde $f$ es el número de nodos bizantinos
+    \item \textbf{Complejidad de Comunicación}: $O(n^2)$ mensajes por ronda de consenso
+    \item \textbf{Latencia}: Típicamente 2-3 rondas de comunicación para alcanzar consenso
 \end{itemize}
 
-\subsubsection{Importancia de la Interactividad}
+% CAPÍTULO 3: DESCRIPCIÓN DE LA PROPUESTA DE SOLUCIÓN
 
-La interactividad transforma al usuario de un observador pasivo a un participante activo en el proceso de exploración y aprendizaje \parencite{algocademy2025algorithm}. Para algoritmos de consenso, donde los procesos son dinámicos e involucran múltiples componentes, la interactividad permite:
+\chapter{Descripción de la Propuesta de Solución}
 
-\begin{itemize}
-    \item \textbf{Comprensión Mejorada:} Desglosar datos complejos en partes manejables.
-    \item \textbf{Mayor Participación:} Mantener a los usuarios interesados y motivados.
-    \item \textbf{Descubrimiento de Insights:} Manipular y explorar datos para descubrir patrones.
-    \item \textbf{Mejora de la Retención:} El aprendizaje visual e interactivo mejora la retención de conceptos.
-\end{itemize}
-
-\subsection{Diseño de Interacción para Herramientas Educativas}
-
-El diseño de una herramienta de visualización interactiva para algoritmos de consenso requiere consideración cuidadosa de principios de experiencia de usuario (UX) y estrategias pedagógicas \parencite{justinmind2025elearning}.
-
-\subsubsection{Estrategias Pedagógicas}
-
-\textbf{Diseño Centrado en el Aprendiz:} La herramienta debe diseñarse considerando las necesidades y nivel de conocimiento de los usuarios objetivo.
-
-\textbf{Fomentar la Interactividad:} Permitir a los usuarios manipular parámetros, predecir resultados y observar consecuencias de sus acciones.
-
-\textbf{Aplicación de Principios Multimedia:} Usar elementos visuales combinados con narración o texto explicativo de forma efectiva.
-
-\textbf{Gamificación:} Incorporar elementos de juego como seguimiento del progreso y resolución de desafíos interactivos.
-
-\textbf{Feedback Inmediato:} Proporcionar retroalimentación en tiempo real sobre las acciones del usuario.
-
-\subsubsection{Técnicas de Narrativa Visual}
-
-La narrativa visual transforma características técnicas abstractas en narrativas convincentes \parencite{fastercapital2025visual}:
-
-\begin{itemize}
-    \item \textbf{Uso de Metáforas:} Comparar conceptos abstractos con experiencias familiares.
-    \item \textbf{Creación de Escenarios:} Construir narrativas en torno a eventos específicos como el "viaje" de una transacción.
-    \item \textbf{Estructura Narrativa:} Seguir inicio, desarrollo y desenlace en las visualizaciones.
-    \item \textbf{Simplificación Progresiva:} Comenzar con una visión general y profundizar en detalles.
-    \item \textbf{Humanización de la Tecnología:} Resaltar cómo los algoritmos permiten confianza y seguridad.
-\end{itemize}
-
-\subsection{Técnicas Específicas para Visualización de Algoritmos de Consenso}
-
-\subsubsection{Representación de Estados de Nodos}
-
-Los nodos en un sistema de consenso atraviesan diferentes estados durante la ejecución del algoritmo. Las técnicas visuales incluyen:
-
-\begin{itemize}
-    \item \textbf{Codificación por Color/Forma:} Usar diferentes colores o formas para representar el estado actual de cada nodo.
-    \item \textbf{Diagramas de Estado:} Mostrar explícitamente los posibles estados y las transiciones entre ellos.
-    \item \textbf{Líneas de Tiempo de Estado:} Para cada nodo, mostrar la secuencia de estados durante la simulación.
-\end{itemize}
-
-\subsubsection{Representación del Flujo de Mensajes}
-
-Los algoritmos de consenso involucran intenso intercambio de mensajes entre nodos:
-
-\begin{itemize}
-    \item \textbf{Animación de Mensajes:} Visualizar mensajes como paquetes animados que se mueven entre nodos.
-    \item \textbf{Diagramas de Secuencia:} Ilustrar el orden temporal de mensajes intercambiados.
-    \item \textbf{Grafos Dinámicos de Comunicación:} Representar la red como un grafo donde los arcos representan mensajes.
-\end{itemize}
-
-\subsubsection{Visualización de Parámetros Específicos}
-
-Cada algoritmo tiene parámetros únicos que deben visualizarse efectivamente:
-
-\textbf{Para PoW:}
-\begin{itemize}
-    \item Visualizar el proceso de minería mostrando la búsqueda del nonce
-    \item Representar la dificultad y su ajuste dinámico
-    \item Mostrar la creación de bloques y crecimiento de la cadena
-\end{itemize}
-
-\textbf{Para PoS:}
-\begin{itemize}
-    \item Representar la cantidad de stake de cada validador
-    \item Visualizar el proceso de selección de validadores
-    \item Mostrar recompensas y penalizaciones (slashing)
-\end{itemize}
-
-\textbf{Para PBFT:}
-\begin{itemize}
-    \item Mostrar quorums y votación claramente
-    \item Distinguir roles (primario/secundarios)
-    \item Visualizar las fases del protocolo
-\end{itemize}
-
-\subsubsection{Simulación Interactiva de Escenarios}
-
-Una herramienta efectiva debe permitir explorar escenarios anómalos:
-
-\textbf{Simulación de Ataques:}
-\begin{itemize}
-    \item Ataques del 51\% en PoW/PoS
-    \item Ataques específicos de PoS (Nothing at Stake)
-    \item Comportamiento bizantino en PBFT
-\end{itemize}
-
-\textbf{Simulación de Bifurcaciones:}
-\begin{itemize}
-    \item Mostrar la cadena dividiéndose en ramas
-    \item Visualizar la resolución y convergencia
-    \item Permitir al usuario inducir bifurcaciones
-\end{itemize}
-
-\textbf{Simulación de Fallos de Nodos:}
-\begin{itemize}
-    \item Mostrar nodos volviéndose inactivos
-    \item Impacto en el consenso
-    \item Mecanismos de recuperación
-\end{itemize}
-
-\subsection{Consideraciones para Desarrollo de Aplicación Web}
-
-\subsubsection{Tecnologías Frontend}
-
-\textbf{JavaScript} es el lenguaje predominante para desarrollo web frontend.
-
-\textbf{Bibliotecas de Visualización:}
-\begin{itemize}
-    \item \textbf{D3.js:} Biblioteca extremadamente potente para crear visualizaciones dinámicas e interactivas personalizadas \parencite{d3js2025}.
-    \item \textbf{Three.js:} Para gráficos 3D y visualizaciones complejas \parencite{threejs2025}.
-
-    \item \textbf{Chart.js, Recharts:} Para gráficos estándar y métricas agregadas.
-\end{itemize}
-
-\textbf{Frameworks Frontend:} React.js, Angular, o Vue.js para estructurar la aplicación y gestionar componentes de UI.
-
-\subsubsection{Herramientas Existentes}
-
-El proyecto de Chen \parencite{chen2024blockchain} es directamente relevante, siendo una herramienta web interactiva para visualizar conceptos de blockchain, incluyendo PoW y bifurcaciones, usando React, TypeScript y D3.js.
-
-Existen también simuladores académicos como SimBlock para evaluación de rendimiento, y herramientas comerciales como Crystal para análisis forense de transacciones.
-
-\subsubsection{Principios de Desarrollo}
-
-\textbf{Facilidad de Uso:} La herramienta debe ser intuitiva, incluso para usuarios con conocimientos técnicos limitados.
-
-\textbf{Control del Usuario:} Permitir controlar velocidad de simulación, pausar, retroceder, avanzar paso a paso.
-
-\textbf{Múltiples Vistas Coordinadas:} Ofrecer vista de red, línea de tiempo de mensajes, estado de nodos, y pseudocódigo del algoritmo.
-
-\textbf{Accesibilidad:} Considerar principios de diseño accesible para un amplio rango de usuarios.
-
-El desarrollo debe seguir un enfoque modular, donde la lógica de cada algoritmo esté separada de la capa de visualización, permitiendo añadir o modificar algoritmos más fácilmente.
-
-% CAPÍTULO 3: DESCRIPCIÓN DE LA PROPUESTA SOLUCIÓN
-
-\chapter{DESCRIPCIÓN DE LA PROPUESTA SOLUCIÓN}
-
-\textit{Este capítulo presenta la propuesta técnica completa para el desarrollo de la herramienta de visualización interactiva. Incluye el análisis detallado de los algoritmos de consenso PoW, PoS y PBFT, el diseño arquitectónico de la aplicación web, la especificación de funcionalidades interactivas, y la contextualización con herramientas existentes en el mercado.}
+\textit{Este capítulo presenta la propuesta técnica completa para el desarrollo de la herramienta de visualización interactiva de algoritmos de consenso en blockchain. Se detalla la arquitectura del sistema, los módulos funcionales, las especificaciones técnicas de implementación, y las funcionalidades interactivas que permitirán a los usuarios comprender y experimentar con los diferentes mecanismos de consenso de manera práctica y educativa.}
 
 \newpage
-
-\section{Introducción}
-
-Los algoritmos de consenso constituyen el núcleo fundamental de la tecnología blockchain, determinando cómo los nodos de una red distribuida alcanzan acuerdos sobre el estado de la cadena de bloques sin depender de una autoridad central \cite{nakamoto2008bitcoin}. La comprensión profunda de estos mecanismos es crucial para el desarrollo, implementación y optimización de sistemas blockchain, especialmente considerando las diferencias significativas en términos de seguridad, escalabilidad y eficiencia energética entre algoritmos como Proof of Work (PoW), Proof of Stake (PoS) y Practical Byzantine Fault Tolerance (PBFT).
-
-La presente propuesta aborda la necesidad crítica de herramientas educativas y analíticas que permitan visualizar e interactuar con estos algoritmos de consenso de manera intuitiva. A través del desarrollo de una plataforma de visualización interactiva, se pretende facilitar tanto el aprendizaje académico como el análisis técnico de estos sistemas complejos.
 
 \section{Fundamentación de la Propuesta}
 
@@ -559,157 +658,178 @@ La solución propuesta se sustenta en cuatro pilares fundamentales que garantiza
     \item \textbf{Accesibilidad Educativa}: Diseño de una interfaz intuitiva que facilite el acceso tanto a estudiantes como a profesionales, con diferentes niveles de profundidad técnica según las necesidades del usuario.
 \end{enumerate}
 
-\section{Análisis de Algoritmos de Consenso}
+\section{Arquitectura del Sistema}
 
-\subsection{Proof of Work (PoW)}
+\subsection{Diseño Arquitectónico General}
 
-\subsubsection{Características Fundamentales}
-
-El algoritmo Proof of Work, popularizado por Bitcoin, basa su seguridad en la dificultad computacional de resolver problemas criptográficos \cite{nakamoto2008bitcoin}. Los mineros compiten por encontrar un nonce que, combinado con los datos del bloque, produzca un hash que cumpla con el criterio de dificultad establecido.
-
-\subsubsection{Ventajas y Desventajas}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|p{6cm}|p{6cm}|}
-\hline
-\textbf{Ventajas} & \textbf{Desventajas} \\
-\hline
-Alta seguridad demostrada & Elevado consumo energético \\
-Descentralización efectiva & Baja escalabilidad (7 TPS en Bitcoin) \\
-Resistencia a ataques del 51\% & Vulnerabilidad a mining pools \\
-Inmutabilidad histórica & Tiempo de confirmación lento \\
-\hline
-\end{tabular}
-\caption{Análisis comparativo de PoW}
-\label{tab:pow-comparison}
-\end{table}
-
-\subsubsection{Vulnerabilidades Principales}
+La arquitectura del sistema sigue un patrón de diseño modular de tres capas que garantiza escalabilidad, mantenibilidad y separación de responsabilidades:
 
 \begin{enumerate}
-    \item \textbf{Ataques del 51\%}: Cuando un actor malicioso controla más del 50\% del poder de hash de la red
-    \item \textbf{Selfish Mining}: Estrategia donde los mineros retienen bloques para obtener ventajas injustas
-    \item \textbf{Centralización de Mining Pools}: Concentración del poder de hash en pocas entidades
+    \item \textbf{Capa de Presentación (Frontend)}: Interfaz de usuario desarrollada con tecnologías web modernas (React.js/Vue.js) que proporciona las herramientas de visualización interactiva y controles de simulación.
+    
+    \item \textbf{Capa de Lógica de Negocio (Backend)}: Servidor de aplicaciones que implementa los motores de simulación de algoritmos de consenso, gestión de datos de simulación, y APIs REST para comunicación con el frontend.
+    
+    \item \textbf{Capa de Persistencia (Base de Datos)}: Sistema de almacenamiento que mantiene configuraciones de simulación, resultados de experimentos, perfiles de usuario, y datos de análisis comparativo.
 \end{enumerate}
 
-\subsection{Proof of Stake (PoS)}
+\subsection{Especificaciones Técnicas}
 
-\subsubsection{Mecanismo de Funcionamiento}
-
-En PoS, los validadores son seleccionados para crear nuevos bloques basándose en su participación (stake) en la red, eliminando la necesidad de competencia computacional intensiva \cite{king2012ppcoin}. Este enfoque reduce significativamente el consumo energético mientras mantiene la seguridad del sistema.
-
-\subsubsection{Ventajas y Limitaciones}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|p{6cm}|p{6cm}|}
-\hline
-\textbf{Ventajas} & \textbf{Limitaciones} \\
-\hline
-Eficiencia energética superior & Problema de "nothing at stake" \\
-Mayor escalabilidad & Concentración de riqueza \\
-Tiempo de finalización más rápido & Ataques de long-range \\
-Menor barrera de entrada & Complejidad de implementación \\
-\hline
-\end{tabular}
-\caption{Análisis comparativo de PoS}
-\label{tab:pos-comparison}
-\end{table}
-
-\subsubsection{Mecanismos de Seguridad}
-
+\subsubsection{Tecnologías Frontend}
 \begin{itemize}
-    \item \textbf{Slashing}: Penalización económica por comportamiento malicioso
-    \item \textbf{Checkpointing}: Puntos de control que previenen ataques de reorganización
-    \item \textbf{Randomización}: Selección pseudoaleatoria de validadores
+    \item \textbf{Framework}: React.js 18+ con TypeScript para desarrollo robusto y tipado
+    \item \textbf{Visualización}: D3.js y Three.js para gráficos 2D/3D interactivos
+    \item \textbf{Estilos}: Tailwind CSS para diseño responsivo y moderno
+    \item \textbf{Estado}: Redux Toolkit para gestión de estado global de la aplicación
 \end{itemize}
 
-\subsection{Practical Byzantine Fault Tolerance (PBFT)}
-
-\subsubsection{Fundamentos Teóricos}
-
-PBFT resuelve el problema del consenso bizantino en sistemas distribuidos, tolerando hasta $(n-1)/3$ nodos maliciosos en una red de $n$ nodos \cite{castro1999practical}. Su diseño garantiza la consistencia y liveness incluso en presencia de fallos arbitrarios.
-
-\subsubsection{Fases del Protocolo}
-
-\begin{enumerate}
-    \item \textbf{Pre-prepare}: El nodo primario propone un bloque
-    \item \textbf{Prepare}: Los nodos validan y votan por la propuesta
-    \item \textbf{Commit}: Se confirma el consenso y se ejecuta la transacción
-\end{enumerate}
-
-\subsubsection{Aplicaciones y Limitaciones}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|p{6cm}|p{6cm}|}
-\hline
-\textbf{Aplicaciones} & \textbf{Limitaciones} \\
-\hline
-Redes permisionadas & Escalabilidad limitada \\
-Entornos empresariales & Complejidad de comunicación O(n²) \\
-Sistemas críticos & Dependencia del nodo primario \\
-Hyperledger Fabric & Vulnerabilidad a ataques Sybil \\
-\hline
-\end{tabular}
-\caption{Aplicaciones y limitaciones de PBFT}
-\label{tab:pbft-comparison}
-\end{table}
-
-\section{Diseño de la Herramienta de Visualización}
-
-\subsection{Arquitectura del Sistema}
-
-La herramienta propuesta adopta una arquitectura modular de tres capas que garantiza escalabilidad, mantenibilidad y extensibilidad:
-
-\subsubsection{Capa de Presentación (Frontend)}
-
+\subsubsection{Tecnologías Backend}
 \begin{itemize}
-    \item \textbf{Framework}: React.js con TypeScript para robustez y mantenibilidad
-    \item \textbf{Visualización}: D3.js para gráficos interactivos y Three.js para representaciones 3D
-    \item \textbf{UI/UX}: Tailwind CSS para consistencia visual y responsive design
-    \item \textbf{Estado}: Redux para gestión centralizada del estado de la aplicación
+    \item \textbf{Runtime}: Node.js con Express.js para servidor de aplicaciones
+    \item \textbf{Lenguaje}: TypeScript para consistencia y mantenibilidad
+    \item \textbf{APIs}: RESTful con documentación OpenAPI/Swagger
+    \item \textbf{Tiempo Real}: WebSockets para sincronización de simulaciones
 \end{itemize}
 
-\subsubsection{Capa de Lógica de Negocio (Backend)}
-
+\subsubsection{Infraestructura}
 \begin{itemize}
-    \item \textbf{Runtime}: Node.js con Express.js para APIs RESTful
-    \item \textbf{WebSockets}: Socket.io para comunicación en tiempo real
-    \item \textbf{Simulación}: Motores de consenso implementados en JavaScript/TypeScript
-    \item \textbf{Métricas}: Sistema de recolección y análisis de datos de rendimiento
+    \item \textbf{Base de Datos}: PostgreSQL para datos estructurados y Redis para caché
+    \item \textbf{Containerización}: Docker para despliegue consistente
+    \item \textbf{Orquestación}: Docker Compose para desarrollo local
+    \item \textbf{Monitoreo}: Logging estructurado con Winston y métricas con Prometheus
 \end{itemize}
 
-\subsubsection{Capa de Datos}
+\section{Módulos Funcionales del Sistema}
 
+\subsection{Módulo de Simulación de Algoritmos}
+
+Este módulo constituye el núcleo técnico de la aplicación, implementando los motores de simulación que recrean fielmente el comportamiento de cada algoritmo de consenso:
+
+\subsubsection{Motor de Simulación PoW}
 \begin{itemize}
-    \item \textbf{Base de datos}: MongoDB para almacenamiento flexible de configuraciones
-    \item \textbf{Cache}: Redis para datos de simulación en tiempo real
-    \item \textbf{Archivos}: Sistema de logs para análisis posterior
+    \item \textbf{Simulación de Minería}: Implementa el proceso de búsqueda de nonce con dificultad configurable
+    \item \textbf{Gestión de Pool de Mineros}: Simula diferentes capacidades de hash y comportamientos de minería
+    \item \textbf{Ajuste Dinámico de Dificultad}: Modela el algoritmo de ajuste basado en tiempo de bloque objetivo
+    \item \textbf{Propagación de Red}: Simula delays de red y forks temporales
 \end{itemize}
 
-\subsection{Módulos Funcionales}
-
-\subsubsection{Módulo de Simulación}
-
-Implementa los motores de consenso que recrean fielmente el comportamiento de cada algoritmo:
-
+\subsubsection{Motor de Simulación PoS}
 \begin{itemize}
-    \item \textbf{Motor PoW}: Simula el proceso de minería, ajuste de dificultad y propagación de bloques
-    \item \textbf{Motor PoS}: Modela la selección de validadores, staking y slashing
-    \item \textbf{Motor PBFT}: Implementa las fases del protocolo y manejo de fallos bizantinos
+    \item \textbf{Selección de Validadores}: Implementa algoritmos de selección basados en stake y randomización
+    \item \textbf{Sistema de Staking}: Gestiona depósitos, retiros y distribución de recompensas
+    \item \textbf{Mecanismo de Slashing}: Simula penalizaciones por comportamiento malicioso
+    \item \textbf{Checkpoint System}: Implementa finalidad económica a través de checkpoints
 \end{itemize}
 
-\subsubsection{Módulo de Visualización}
-
-Proporciona representaciones gráficas interactivas adaptadas a cada algoritmo:
-
+\subsubsection{Motor de Simulación PBFT}
 \begin{itemize}
-    \item \textbf{Vista de Red}: Topología de nodos con estados en tiempo real
-    \item \textbf{Vista de Bloques}: Cadena de bloques con métricas de validación
-    \item \textbf{Vista de Métricas}: Dashboards con KPIs comparativos
-    \item \textbf{Vista de Ataques}: Simulación visual de vulnerabilidades
+    \item \textbf{Protocolo de Tres Fases}: Implementa Pre-prepare, Prepare y Commit con validaciones
+    \item \textbf{Gestión de Views}: Maneja cambios de vista y recuperación ante fallos del nodo primario
+    \item \textbf{Tolerancia a Fallos Bizantinos}: Simula nodos maliciosos y mecanismos de detección
+    \item \textbf{Optimizaciones de Performance}: Implementa batching y pipelining de requests
+\end{itemize}
+
+\subsection{Módulo de Visualización Interactiva}
+
+Proporciona interfaces gráficas especializadas que facilitan la comprensión de cada algoritmo a través de representaciones visuales dinámicas:
+
+\subsubsection{Componentes de Visualización Comunes}
+\begin{itemize}
+    \item \textbf{Vista de Topología de Red}: Representación gráfica de nodos con estados en tiempo real
+    \item \textbf{Monitor de Transacciones}: Seguimiento visual del flujo de transacciones pendientes y confirmadas
+    \item \textbf{Timeline de Eventos}: Línea temporal de eventos críticos del algoritmo
+    \item \textbf{Panel de Métricas}: Dashboard con KPIs específicos de cada algoritmo
+\end{itemize}
+
+\subsubsection{Visualizaciones Específicas por Algoritmo}
+
+\textbf{PoW - Minería Visual}:
+\begin{itemize}
+    \item Animación del proceso de hash con visualización de nonce increment
+    \item Mapa de calor de dificultad de minería por región de la red
+    \item Gráfico de distribución de poder de hash entre mineros
+    \item Visualización de forks y resolución de conflictos
+\end{itemize}
+
+\textbf{PoS - Staking Dinámico}:
+\begin{itemize}
+    \item Rueda de selección de validadores proporcional al stake
+    \item Visualización de epochs y periodos de validación
+    \item Animación de slashing y penalizaciones
+    \item Gráfico de distribución de rewards y comisiones
+\end{itemize}
+
+\textbf{PBFT - Comunicación Bizantina}:
+\begin{itemize}
+    \item Diagrama de secuencia de mensajes entre nodos
+    \item Visualización de fases del protocolo con estados de nodo
+    \item Simulación de ataques bizantinos y respuestas del sistema
+    \item Mapa de confianza entre nodos de la red
+\end{itemize}
+
+\subsection{Módulo de Configuración y Control}
+
+Permite a los usuarios personalizar parámetros de simulación para experimentar con diferentes escenarios:
+
+\subsubsection{Panel de Configuración Global}
+\begin{itemize}
+    \item \textbf{Parámetros de Red}: Número de nodos, latencia, velocidad de simulación
+    \item \textbf{Condiciones de Fallo}: Configuración de nodos maliciosos y fallos de red
+    \item \textbf{Métricas de Monitoreo}: Selección de KPIs a visualizar y analizar
+    \item \textbf{Escenarios Predefinidos}: Templates de configuración para casos de uso comunes
+\end{itemize}
+
+\subsubsection{Controles Específicos por Algoritmo}
+
+\textbf{Configuración PoW}:
+\begin{itemize}
+    \item Dificultad inicial y algoritmo de ajuste
+    \item Distribución de poder de hash entre mineros
+    \item Tiempo objetivo de bloque y recompensas
+    \item Configuración de pools de minería
+\end{itemize}
+
+\textbf{Configuración PoS}:
+\begin{itemize}
+    \item Distribución inicial de stakes y requisitos mínimos
+    \item Parámetros de slashing y penalizaciones
+    \item Duración de epochs y periodos de unbonding
+    \item Configuración de comisiones y rewards
+\end{itemize}
+
+\textbf{Configuración PBFT}:
+\begin{itemize}
+    \item Número de nodos y threshold de tolerancia bizantina
+    \item Timeouts de fases y mecanismos de view-change
+    \item Configuración de nodos maliciosos y tipos de ataque
+    \item Parámetros de batching y optimización de throughput
+\end{itemize}
+
+\subsection{Módulo de Análisis y Comparación}
+
+Proporciona herramientas avanzadas para evaluar y comparar el rendimiento de diferentes algoritmos:
+
+\subsubsection{Sistema de Métricas}
+\begin{itemize}
+    \item \textbf{Métricas de Rendimiento}: TPS, latencia, throughput, finalidad
+    \item \textbf{Métricas de Seguridad}: Resistencia a ataques, decentralización, inmutabilidad
+    \item \textbf{Métricas de Eficiencia}: Consumo energético, costos operacionales, escalabilidad
+    \item \textbf{Métricas de Usabilidad}: Complejidad de implementación, facilidad de mantenimiento
+\end{itemize}
+
+\subsubsection{Herramientas de Comparación}
+\begin{itemize}
+    \item \textbf{Tablas Comparativas}: Análisis lado a lado de métricas clave
+    \item \textbf{Gráficos Radar}: Visualización multidimensional de fortalezas y debilidades
+    \item \textbf{Análisis de Trade-offs}: Identificación de compromisos entre seguridad, escalabilidad y descentralización
+    \item \textbf{Simulaciones Paralelas}: Ejecución simultánea de algoritmos bajo condiciones idénticas
+\end{itemize}
+
+\subsubsection{Generación de Reportes}
+\begin{itemize}
+    \item \textbf{Reportes Ejecutivos}: Resúmenes de alto nivel para tomadores de decisiones
+    \item \textbf{Reportes Técnicos}: Análisis detallados con datos de simulación
+    \item \textbf{Exportación de Datos}: Formatos CSV, JSON, PDF para análisis posterior
+    \item \textbf{Visualizaciones Exportables}: Gráficos y diagramas para presentaciones
 \end{itemize}
 
 \subsubsection{Módulo de Análisis}
@@ -759,7 +879,7 @@ La propuesta presenta las siguientes ventajas diferenciadas:
 
 \section{Tabla Comparativa de Algoritmos}
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \scriptsize
 \begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|p{2cm}|}
@@ -855,33 +975,15 @@ Se estableció un marco de comparación sistemático que permite evaluar algorit
 
 \subsection{Contribución Educativa}
 
-La herramienta propuesta llena un vacío significativo en el ecosistema educativo de blockchain, proporcionando:
-
-\begin{itemize}
-    \item Visualización interactiva que facilita la comprensión de conceptos abstractos
-    \item Simulaciones en tiempo real que permiten observar el comportamiento dinámico de los algoritmos
-    \item Interfaz intuitiva que hace accesible el conocimiento especializado a diferentes audiencias
-\end{itemize}
+La herramienta propuesta llena un vacío significativo en el ecosistema educativo de blockchain, proporcionando visualización interactiva que facilita la comprensión de conceptos abstractos mediante representaciones gráficas dinámicas que transforman algoritmos complejos en experiencias visuales intuitivas. Adicionalmente, incorpora simulaciones en tiempo real que permiten observar el comportamiento dinámico de los algoritmos bajo diferentes condiciones y parámetros, facilitando el aprendizaje experiencial y la experimentación controlada. El sistema también presenta una interfaz intuitiva que hace accesible el conocimiento especializado a diferentes audiencias, desde estudiantes universitarios hasta profesionales experimentados, adaptándose a diversos niveles de conocimiento previo.
 
 \subsection{Contribución Técnica}
 
-Desde el punto de vista técnico, el trabajo aporta:
-
-\begin{itemize}
-    \item Una arquitectura de referencia para herramientas de visualización de sistemas distribuidos
-    \item Metodología de simulación que balancea precisión técnica con comprensibilidad
-    \item Framework de evaluación comparativa aplicable a nuevos algoritmos de consenso
-\end{itemize}
+Desde el punto de vista técnico, el trabajo aporta una arquitectura de referencia para herramientas de visualización de sistemas distribuidos que puede ser extrapolada y adaptada para otros contextos de enseñanza de tecnologías complejas. También contribuye con una metodología de simulación que logra un balance óptimo entre precisión técnica y comprensibilidad, garantizando que las representaciones sean tanto científicamente rigurosas como pedagógicamente efectivas. Finalmente, proporciona un framework de evaluación comparativa aplicable a nuevos algoritmos de consenso, estableciendo métricas estandarizadas que facilitan el análisis objetivo y sistemático de diferentes mecanismos.
 
 \subsection{Contribución Metodológica}
 
-El enfoque metodológico desarrollado incluye:
-
-\begin{itemize}
-    \item Proceso sistemático de análisis de algoritmos de consenso
-    \item Criterios de evaluación multidimensionales
-    \item Métricas de usabilidad específicas para herramientas educativas técnicas
-\end{itemize}
+El enfoque metodológico desarrollado incluye un proceso sistemático de análisis de algoritmos de consenso que puede ser replicado y extendido para el estudio de otros mecanismos distribuidos, proporcionando un marco de trabajo estructurado para la investigación futura. Se establecen criterios de evaluación multidimensionales que consideran aspectos técnicos, económicos y sociales de los algoritmos, ofreciendo una perspectiva holística que va más allá de las métricas tradicionales de rendimiento. Además, se definen métricas de usabilidad específicas para herramientas educativas técnicas, contribuyendo al desarrollo de estándares de calidad para este tipo de aplicaciones especializadas.
 
 
 \section{Limitaciones y Trabajo Futuro}
@@ -934,5 +1036,18 @@ El éxito de esta iniciativa contribuirá significativamente al desarrollo de pr
 
 La visualización interactiva de algoritmos de consenso representa, por tanto, no solo una herramienta educativa, sino un puente hacia un futuro donde la tecnología blockchain sea más comprensible, accesible y correctamente implementada por profesionales de todo el mundo.
 
+\pagestyle{plain} 
 \printbibliography
+
+\addcontentsline{toc}{section}{Anexos}
+\section*{Anexos}
+
+\subsection*{Anexo. Hoja de Vida}
+
+\thispagestyle{empty}
+
+\begin{center}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{CV.pdf}
+\end{center}
+
 \end{document}

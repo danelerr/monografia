@@ -1,0 +1,1915 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{itm2025pos}{article}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ITM Web of Conferences}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.itm-conferences.org/articles/itmconf/pdf/2025/04/itmconf_iwadi2024_03013.pdf}}
+      \field{title}{{A Review on Research in Proof of Stake Consensus Mechanism}}
+      \field{year}{2025}
+    \endentry
+    \entry{algocademy2025algorithm}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e6e30e93c4db40f9954ce1d5ed2b14fc}{%
+           family={{Algocademy}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{fullhash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{bibnamehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{authorbibnamehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{authornamehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{authorfullhash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Algocademy}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://algocademy.com/blog/exploring-algorithm-visualization-tools-enhancing-understanding-and-learning/}}
+      \field{title}{{Exploring Algorithm Visualization Tools: Enhancing Understanding and Learning}}
+      \field{year}{2025}
+    \endentry
+    \entry{raftgithub2025raft}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=39761a53dcec2c09d5446a2bc160e56b}{%
+           family={Algorithm},
+           familyi={A\bibinitperiod},
+           given={Raft\bibnamedelima Consensus},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{fullhash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{bibnamehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{authorbibnamehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{authornamehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{authorfullhash}{39761a53dcec2c09d5446a2bc160e56b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{raft.github.io}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://raft.github.io/}}
+      \field{title}{{Raft Consensus Algorithm}}
+      \field{year}{2025}
+    \endentry
+    \entry{aws2025blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Amazon Web Services}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://aws.amazon.com/es/what-is/blockchain/}}
+      \field{title}{{¿Qué es la tecnología de cadenas de bloques (blockchain)?}}
+      \field{year}{2025}
+    \endentry
+    \entry{amores2020blockchain}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=384a183806eb8a883e66afedd981dedc}{%
+           family={Amores\bibnamedelima Martínez},
+           familyi={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universitat Oberta de Catalunya}%
+      }
+      \strng{namehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{fullhash}{384a183806eb8a883e66afedd981dedc}
+      \strng{bibnamehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{authorbibnamehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{authornamehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{authorfullhash}{384a183806eb8a883e66afedd981dedc}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://openaccess.uoc.edu/bitstream/10609/127926/6/aamoresmTFM1220memoria.pdf}}
+      \field{title}{{Blockchain, algoritmos de consenso}}
+      \field{type}{Máster Universitario en Ciberseguridad y Privacidad}
+      \field{year}{2020}
+    \endentry
+    \entry{bartolomeo2025intro}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ed11ebfedfc272f9499058d4dcb90909}{%
+           family={Bartolomeo},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d40323fc42b302530311a63db592f11b}{%
+           family={Machin\bibnamedelima Urbay},
+           familyi={M\bibinitperiod\bibinitdelim U\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional de Cuyo}%
+      }
+      \strng{namehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{fullhash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{bibnamehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{authorbibnamehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{authornamehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{authorfullhash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://bdigital.uncuyo.edu.ar/objetos_digitales/15304/14.-introduccinalatecnologia.pdf}}
+      \field{title}{{Introducción a la tecnología Blockchain: Su impacto en las Ciencias Económicas}}
+    \endentry
+    \entry{visa2025what}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b515313abf88085b4f542850b77853a}{%
+           family={Bedawala},
+           familyi={B\bibinitperiod},
+           given={Mustafa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3b515313abf88085b4f542850b77853a}
+      \strng{fullhash}{3b515313abf88085b4f542850b77853a}
+      \strng{bibnamehash}{3b515313abf88085b4f542850b77853a}
+      \strng{authorbibnamehash}{3b515313abf88085b4f542850b77853a}
+      \strng{authornamehash}{3b515313abf88085b4f542850b77853a}
+      \strng{authorfullhash}{3b515313abf88085b4f542850b77853a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Visa}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://usa.visa.com/solutions/crypto/consensus-mechanisms.html}}
+      \field{title}{{What are Consensus Mechanisms?}}
+      \field{year}{2023}
+    \endentry
+    \entry{bonaparte_interactive_consensus}{misc}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Bonaparte's Interactive Consensus Mechanisms}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://bonapartes-interactive-consensus-mechanisms.vercel.app/
+      \endverb
+      \verb{url}
+      \verb https://bonapartes-interactive-consensus-mechanisms.vercel.app/
+      \endverb
+    \endentry
+    \entry{threejs2025}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16f0518683ef1f0b3213ce46a9c96467}{%
+           family={Cabello},
+           familyi={C\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{fullhash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{bibnamehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{authorbibnamehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{authornamehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{authorfullhash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Three.js}
+      \field{note}{Consultado el 3 de junio de 2025, \url{https://threejs.org/}}
+      \field{title}{Three.js - JavaScript 3D Library}
+      \field{year}{2025}
+    \endentry
+    \entry{castro1999practical}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=084730901e78fd30411e6af546d8540f}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d8bf2803c6ae711dd3210bfe6b7086f}{%
+           family={Liskov},
+           familyi={L\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{fullhash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{bibnamehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{authorbibnamehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{authornamehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{authorfullhash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Computer Systems}
+      \field{number}{4}
+      \field{title}{Practical Byzantine fault tolerance}
+      \field{volume}{17}
+      \field{year}{1999}
+      \field{pages}{398\bibrangedash 461}
+      \range{pages}{64}
+      \verb{urlraw}
+      \verb https://pmg.csail.mit.edu/papers/osdi99.pdf
+      \endverb
+      \verb{url}
+      \verb https://pmg.csail.mit.edu/papers/osdi99.pdf
+      \endverb
+    \endentry
+    \entry{chen2024blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38241eaee18102cab15a125b0654c7da}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{fullhash}{38241eaee18102cab15a125b0654c7da}
+      \strng{bibnamehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{authorbibnamehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{authornamehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{authorfullhash}{38241eaee18102cab15a125b0654c7da}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{GitHub}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://github.com/jiechen257/blockchain-visualizer}}
+      \field{title}{{Blockchain Visualizer}}
+      \field{year}{2024}
+    \endentry
+    \entry{odu20255g}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=691702c838ad2e366b64d6f40b30fb17}{%
+           family={Commons},
+           familyi={C\bibinitperiod},
+           given={ODU\bibnamedelima Digital},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{fullhash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{bibnamehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{authorbibnamehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{authornamehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{authorfullhash}{691702c838ad2e366b64d6f40b30fb17}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ODU Digital Commons}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1111&context=itds_facpubs}}
+      \field{title}{{5G-Practical Byzantine Fault Tolerance: An Improved PBFT Consensus Algorithm for the 5G Network}}
+      \field{year}{2025}
+    \endentry
+    \entry{crypto2025consensus}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4a834ebe859a8753bcaf327686d2591b}{%
+           family={{Crypto.com}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{fullhash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{bibnamehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{authorbibnamehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{authornamehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{authorfullhash}{4a834ebe859a8753bcaf327686d2591b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Crypto.com}
+      \field{month}{5}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://crypto.com/es/university/consensus-mechanisms-explained}}
+      \field{title}{{Consensus Mechanisms Explained}}
+      \field{year}{2024}
+    \endentry
+    \entry{dev3lop2025visualization}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=33bfd541c5124256d495a42689011743}{%
+           family={{Dev3lop}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{33bfd541c5124256d495a42689011743}
+      \strng{fullhash}{33bfd541c5124256d495a42689011743}
+      \strng{bibnamehash}{33bfd541c5124256d495a42689011743}
+      \strng{authorbibnamehash}{33bfd541c5124256d495a42689011743}
+      \strng{authornamehash}{33bfd541c5124256d495a42689011743}
+      \strng{authorfullhash}{33bfd541c5124256d495a42689011743}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Dev3lop}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://dev3lop.com/data-visualization-principles-making-complex-data-understandable/}}
+      \field{title}{{Data Visualization Principles: Making Complex Data Understandable}}
+      \field{year}{2025}
+    \endentry
+    \entry{ethereum2022merge}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=91a561dbd1e35b5459edfad15075d17c}{%
+           family={{Ethereum Foundation}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{fullhash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{bibnamehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{authorbibnamehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{authornamehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{authorfullhash}{91a561dbd1e35b5459edfad15075d17c}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Ethereum.org}
+      \field{month}{9}
+      \field{note}{Transición de Ethereum de PoW a PoS}
+      \field{title}{{The Merge}}
+      \field{year}{2022}
+    \endentry
+    \entry{ey_blockchain_analyzer}{misc}{}
+      \list{publisher}{1}{%
+        {Ernst \& Young}%
+      }
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{EY Blockchain Analyzer: Explorer \& Visualizer}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ey.com/en_us/services/blockchain/platforms/explorer-visualizer
+      \endverb
+      \verb{url}
+      \verb https://www.ey.com/en_us/services/blockchain/platforms/explorer-visualizer
+      \endverb
+    \endentry
+    \entry{fastercapital2025visual}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=44bc19a2a603b7bc0a368f77cd27a2de}{%
+           family={{FasterCapital}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{fullhash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{bibnamehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{authorbibnamehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{authornamehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{authorfullhash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{FasterCapital}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://fastercapital.com/topics/simplifying-complex-concepts-with-visual-storytelling.html}}
+      \field{title}{{Simplifying Complex Concepts With Visual Storytelling}}
+      \field{year}{2025}
+    \endentry
+    \entry{geeksforgeeks2024pbft}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{GeeksforGeeks}
+      \field{month}{7}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.geeksforgeeks.org/practical-byzantine-fault-tolerancepbft/}}
+      \field{title}{{Practical Byzantine Fault Tolerance(pBFT)}}
+      \field{year}{2024}
+    \endentry
+    \entry{charterglobal2025top}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9b6471be801815b0effbf2a80fc340fa}{%
+           family={Global},
+           familyi={G\bibinitperiod},
+           given={Charter},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{fullhash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{bibnamehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{authorbibnamehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{authornamehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{authorfullhash}{9b6471be801815b0effbf2a80fc340fa}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Charter Global}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.charterglobal.com/blockchain-trends/}}
+      \field{title}{{Top Blockchain Trends for 2025: The Future of Digital Innovation}}
+      \field{year}{2025}
+    \endentry
+    \entry{hyperledger2025fabric}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b26e30662316beb13c2c5f629e23a4df}{%
+           family={{Hyperledger Fabric}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{fullhash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{bibnamehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{authorbibnamehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{authornamehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{authorfullhash}{b26e30662316beb13c2c5f629e23a4df}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Hyperledger Fabric Documentation}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html}}
+      \field{title}{{The Ordering Service}}
+      \field{year}{2025}
+    \endentry
+    \entry{ibm2025blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={{IBM}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{IBM}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.ibm.com/es-es/topics/blockchain}}
+      \field{title}{{¿Qué es la tecnología blockchain?}}
+      \field{year}{2025}
+    \endentry
+    \entry{investopedia2024pos}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abcdb78a564e00abcb81ee953f22cf04}{%
+           family={{Investopedia}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{fullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{bibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorbibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authornamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorfullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Investopedia}
+      \field{month}{6}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.investopedia.com/terms/p/proof-stake-pos.asp}}
+      \field{title}{{Proof-of-Stake (PoS)}}
+      \field{year}{2024}
+    \endentry
+    \entry{investopedia2025pow}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abcdb78a564e00abcb81ee953f22cf04}{%
+           family={{Investopedia}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{fullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{bibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorbibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authornamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorfullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Investopedia}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.investopedia.com/terms/p/proof-work.asp}}
+      \field{title}{{Proof of Work (PoW): Definition, How It Works, and Examples}}
+      \field{year}{2025}
+    \endentry
+    \entry{github2025jiechen257}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8a9ec22d3addbb83815cc7f4e868abf}{%
+           family={jiechen257},
+           familyi={j\bibinitperiod},
+           given={GitHub\bibnamedelima -},
+           giveni={G\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{fullhash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{bibnamehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{authorbibnamehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{authornamehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{authorfullhash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \field{sortinit}{j}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{GitHub}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://github.com/jiechen257/blockchain-visualizer}}
+      \field{title}{{jiechen257/blockchain-visualizer: An interactive web tool ...}}
+      \field{year}{2025}
+    \endentry
+    \entry{justinmind2025elearning}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=28105d12dbf84605a0938668e666441b}{%
+           family={{Justinmind}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{28105d12dbf84605a0938668e666441b}
+      \strng{fullhash}{28105d12dbf84605a0938668e666441b}
+      \strng{bibnamehash}{28105d12dbf84605a0938668e666441b}
+      \strng{authorbibnamehash}{28105d12dbf84605a0938668e666441b}
+      \strng{authornamehash}{28105d12dbf84605a0938668e666441b}
+      \strng{authorfullhash}{28105d12dbf84605a0938668e666441b}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Justinmind}
+      \field{month}{3}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.justinmind.com/ui-design/how-to-design-e-learning-platform}}
+      \field{title}{{E-learning platform design guide}}
+      \field{year}{2025}
+    \endentry
+    \entry{king2012ppcoin}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7bcb1c75f895e90edae35d495464c4e9}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Sunny},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d89c01dd1a8471766dad25fd83caa96d}{%
+           family={Nadal},
+           familyi={N\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{fullhash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{bibnamehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{authorbibnamehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{authornamehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{authorfullhash}{e9034d9c8744e729e347b18d7d576e09}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Self-published paper}
+      \field{title}{PPCoin: Peer-to-peer crypto-currency with proof-of-stake}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://decred.org/research/king2012.pdf
+      \endverb
+      \verb{url}
+      \verb https://decred.org/research/king2012.pdf
+      \endverb
+    \endentry
+    \entry{mdpi2025pbft}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9bd49f4c55bb22330226b8f028fb16c1}{%
+           family={{MDPI}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{fullhash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{bibnamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authorbibnamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authornamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authorfullhash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.mdpi.com/2078-2489/16/4/268}}
+      \field{title}{{The Evolution and Optimization Strategies of a PBFT Consensus Algorithm for Consortium Blockchains}}
+      \field{year}{2025}
+    \endentry
+    \entry{nakamoto2008bitcoin}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1977190f018b398e43ede3de043de8ea}{%
+           family={Nakamoto},
+           familyi={N\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{fullhash}{1977190f018b398e43ede3de043de8ea}
+      \strng{bibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorbibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authornamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorfullhash}{1977190f018b398e43ede3de043de8ea}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documento original de Bitcoin que introdujo PoW en blockchain}
+      \field{title}{{Bitcoin: A Peer-to-Peer Electronic Cash System}}
+      \field{year}{2008}
+    \endentry
+    \entry{raft_consensus_simulator}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=764e911dad3498b9b07ebb6676757fd7}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Zihou},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Observable}%
+      }
+      \strng{namehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{fullhash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{bibnamehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{authorbibnamehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{authornamehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{authorfullhash}{764e911dad3498b9b07ebb6676757fd7}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Raft Consensus Simulator}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://observablehq.com/@stwind/raft-consensus-simulator
+      \endverb
+      \verb{url}
+      \verb https://observablehq.com/@stwind/raft-consensus-simulator
+      \endverb
+    \endentry
+    \entry{d3js2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f602bfdf094ee86c5250abc3356194a8}{%
+           family={{Observable}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{fullhash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{bibnamehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{authorbibnamehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{authornamehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{authorfullhash}{f602bfdf094ee86c5250abc3356194a8}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{D3.js}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://d3js.org/}}
+      \field{title}{{D3 by Observable | The JavaScript library for bespoke data visualization}}
+      \field{year}{2025}
+    \endentry
+    \entry{chronicle2025impact}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b708796c47561fb6bc4b09947421207a}{%
+           family={Higher\bibnamedelima Education},
+           familyi={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={The\bibnamedelima Chronicle},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{fullhash}{b708796c47561fb6bc4b09947421207a}
+      \strng{bibnamehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{authorbibnamehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{authornamehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{authorfullhash}{b708796c47561fb6bc4b09947421207a}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{The Chronicle of Higher Education}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://sponsored.chronicle.com/the-impact-of-socialization-and-tacit-knowledge-on-blockchain-education/index.html}}
+      \field{title}{{The Impact of Socialization and Tacit Knowledge on Blockchain ...}}
+      \field{year}{2025}
+    \endentry
+    \entry{researchgate2018towards}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c71ca0e8ac5da7336ffa149007898f9}{%
+           family={ResearchGate},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{fullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{bibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorbibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authornamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorfullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.researchgate.net/publication/329281755_Towards_a_Survey_of_Interactive_Visualization_for_Education}}
+      \field{title}{{(PDF) Towards a Survey of Interactive Visualization for Education}}
+      \field{year}{2018}
+    \endentry
+    \entry{researchgate2025systematic}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c71ca0e8ac5da7336ffa149007898f9}{%
+           family={ResearchGate},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{fullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{bibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorbibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authornamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorfullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.researchgate.net/publication/385669465_A_Systematic_Literature_Review_on_Blockchain_Consensus_Mechanisms'_Security_Applications_and_Open_Challenges}}
+      \field{title}{{(PDF) A Systematic Literature Review on Blockchain Consensus ...}}
+      \field{year}{2024}
+    \endentry
+    \entry{thoughtspot2025principles}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f9429e9b79252ff222a0ea533947997}{%
+           family={{ThoughtSpot}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{fullhash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{bibnamehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{authorbibnamehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{authornamehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{authorfullhash}{1f9429e9b79252ff222a0ea533947997}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{ThoughtSpot}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.thoughtspot.com/data-trends/data-visualization/data-visualization-principles}}
+      \field{title}{{6 Most Useful Data Visualization Principles For Analysts}}
+      \field{year}{2025}
+    \endentry
+    \entry{stanford2025rodger}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70079656133b3884f6c571fd69f37e6f}{%
+           family={University},
+           familyi={U\bibinitperiod},
+           given={Stanford},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Stanford University}%
+      }
+      \strng{namehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{fullhash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{bibnamehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{authorbibnamehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{authornamehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{authorfullhash}{70079656133b3884f6c571fd69f37e6f}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://web.stanford.edu/~rodger/}}
+      \field{title}{{Rodger Research Laboratory - Stanford University}}
+      \field{type}{techreport}
+      \field{year}{2025}
+    \endentry
+    \entry{businesswire2025blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=29dc8aadc9ad911c56fe8d5b05fc8ea9}{%
+           family={Wire},
+           familyi={W\bibinitperiod},
+           given={Business},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{fullhash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{bibnamehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{authorbibnamehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{authornamehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{authorfullhash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Business Wire}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.businesswire.com/news/home/20250313854857/en/Blockchain-Technology-Market-Report-2025-2030-Hybrid-Blockchain-Leads-Market-Expansion---Key-Use-Cases-Industry-Trends-to-2030---ResearchAndMarkets.com}}
+      \field{title}{{Blockchain Technology Market Report 2025-2030: Hybrid ...}}
+      \field{year}{2025}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{itm2025pos}{article}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ITM Web of Conferences}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.itm-conferences.org/articles/itmconf/pdf/2025/04/itmconf_iwadi2024_03013.pdf}}
+      \field{title}{{A Review on Research in Proof of Stake Consensus Mechanism}}
+      \field{year}{2025}
+    \endentry
+    \entry{algocademy2025algorithm}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e6e30e93c4db40f9954ce1d5ed2b14fc}{%
+           family={{Algocademy}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{fullhash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{bibnamehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{authorbibnamehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{authornamehash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \strng{authorfullhash}{e6e30e93c4db40f9954ce1d5ed2b14fc}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Algocademy}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://algocademy.com/blog/exploring-algorithm-visualization-tools-enhancing-understanding-and-learning/}}
+      \field{title}{{Exploring Algorithm Visualization Tools: Enhancing Understanding and Learning}}
+      \field{year}{2025}
+    \endentry
+    \entry{raftgithub2025raft}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=39761a53dcec2c09d5446a2bc160e56b}{%
+           family={Algorithm},
+           familyi={A\bibinitperiod},
+           given={Raft\bibnamedelima Consensus},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{fullhash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{bibnamehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{authorbibnamehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{authornamehash}{39761a53dcec2c09d5446a2bc160e56b}
+      \strng{authorfullhash}{39761a53dcec2c09d5446a2bc160e56b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{raft.github.io}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://raft.github.io/}}
+      \field{title}{{Raft Consensus Algorithm}}
+      \field{year}{2025}
+    \endentry
+    \entry{aws2025blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Amazon Web Services}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://aws.amazon.com/es/what-is/blockchain/}}
+      \field{title}{{¿Qué es la tecnología de cadenas de bloques (blockchain)?}}
+      \field{year}{2025}
+    \endentry
+    \entry{amores2020blockchain}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=384a183806eb8a883e66afedd981dedc}{%
+           family={Amores\bibnamedelima Martínez},
+           familyi={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universitat Oberta de Catalunya}%
+      }
+      \strng{namehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{fullhash}{384a183806eb8a883e66afedd981dedc}
+      \strng{bibnamehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{authorbibnamehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{authornamehash}{384a183806eb8a883e66afedd981dedc}
+      \strng{authorfullhash}{384a183806eb8a883e66afedd981dedc}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://openaccess.uoc.edu/bitstream/10609/127926/6/aamoresmTFM1220memoria.pdf}}
+      \field{title}{{Blockchain, algoritmos de consenso}}
+      \field{type}{Máster Universitario en Ciberseguridad y Privacidad}
+      \field{year}{2020}
+    \endentry
+    \entry{bartolomeo2025intro}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ed11ebfedfc272f9499058d4dcb90909}{%
+           family={Bartolomeo},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d40323fc42b302530311a63db592f11b}{%
+           family={Machin\bibnamedelima Urbay},
+           familyi={M\bibinitperiod\bibinitdelim U\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional de Cuyo}%
+      }
+      \strng{namehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{fullhash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{bibnamehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{authorbibnamehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{authornamehash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \strng{authorfullhash}{8a57ed59d662c422cd515fb21f87d8c5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://bdigital.uncuyo.edu.ar/objetos_digitales/15304/14.-introduccinalatecnologia.pdf}}
+      \field{title}{{Introducción a la tecnología Blockchain: Su impacto en las Ciencias Económicas}}
+    \endentry
+    \entry{visa2025what}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b515313abf88085b4f542850b77853a}{%
+           family={Bedawala},
+           familyi={B\bibinitperiod},
+           given={Mustafa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3b515313abf88085b4f542850b77853a}
+      \strng{fullhash}{3b515313abf88085b4f542850b77853a}
+      \strng{bibnamehash}{3b515313abf88085b4f542850b77853a}
+      \strng{authorbibnamehash}{3b515313abf88085b4f542850b77853a}
+      \strng{authornamehash}{3b515313abf88085b4f542850b77853a}
+      \strng{authorfullhash}{3b515313abf88085b4f542850b77853a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Visa}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://usa.visa.com/solutions/crypto/consensus-mechanisms.html}}
+      \field{title}{{What are Consensus Mechanisms?}}
+      \field{year}{2023}
+    \endentry
+    \entry{bonaparte_interactive_consensus}{misc}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Bonaparte's Interactive Consensus Mechanisms}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://bonapartes-interactive-consensus-mechanisms.vercel.app/
+      \endverb
+      \verb{url}
+      \verb https://bonapartes-interactive-consensus-mechanisms.vercel.app/
+      \endverb
+    \endentry
+    \entry{threejs2025}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16f0518683ef1f0b3213ce46a9c96467}{%
+           family={Cabello},
+           familyi={C\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{fullhash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{bibnamehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{authorbibnamehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{authornamehash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \strng{authorfullhash}{56b52b7dc46bcb3b5a963833ba087c43}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Three.js}
+      \field{note}{Consultado el 3 de junio de 2025, \url{https://threejs.org/}}
+      \field{title}{Three.js - JavaScript 3D Library}
+      \field{year}{2025}
+    \endentry
+    \entry{castro1999practical}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=084730901e78fd30411e6af546d8540f}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d8bf2803c6ae711dd3210bfe6b7086f}{%
+           family={Liskov},
+           familyi={L\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{fullhash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{bibnamehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{authorbibnamehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{authornamehash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \strng{authorfullhash}{de7652ffb5be2428031d8e9c5f0eec72}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Computer Systems}
+      \field{number}{4}
+      \field{title}{Practical Byzantine fault tolerance}
+      \field{volume}{17}
+      \field{year}{1999}
+      \field{pages}{398\bibrangedash 461}
+      \range{pages}{64}
+      \verb{urlraw}
+      \verb https://pmg.csail.mit.edu/papers/osdi99.pdf
+      \endverb
+      \verb{url}
+      \verb https://pmg.csail.mit.edu/papers/osdi99.pdf
+      \endverb
+    \endentry
+    \entry{chen2024blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38241eaee18102cab15a125b0654c7da}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{fullhash}{38241eaee18102cab15a125b0654c7da}
+      \strng{bibnamehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{authorbibnamehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{authornamehash}{38241eaee18102cab15a125b0654c7da}
+      \strng{authorfullhash}{38241eaee18102cab15a125b0654c7da}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{GitHub}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://github.com/jiechen257/blockchain-visualizer}}
+      \field{title}{{Blockchain Visualizer}}
+      \field{year}{2024}
+    \endentry
+    \entry{odu20255g}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=691702c838ad2e366b64d6f40b30fb17}{%
+           family={Commons},
+           familyi={C\bibinitperiod},
+           given={ODU\bibnamedelima Digital},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{fullhash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{bibnamehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{authorbibnamehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{authornamehash}{691702c838ad2e366b64d6f40b30fb17}
+      \strng{authorfullhash}{691702c838ad2e366b64d6f40b30fb17}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ODU Digital Commons}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1111&context=itds_facpubs}}
+      \field{title}{{5G-Practical Byzantine Fault Tolerance: An Improved PBFT Consensus Algorithm for the 5G Network}}
+      \field{year}{2025}
+    \endentry
+    \entry{crypto2025consensus}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4a834ebe859a8753bcaf327686d2591b}{%
+           family={{Crypto.com}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{fullhash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{bibnamehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{authorbibnamehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{authornamehash}{4a834ebe859a8753bcaf327686d2591b}
+      \strng{authorfullhash}{4a834ebe859a8753bcaf327686d2591b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Crypto.com}
+      \field{month}{5}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://crypto.com/es/university/consensus-mechanisms-explained}}
+      \field{title}{{Consensus Mechanisms Explained}}
+      \field{year}{2024}
+    \endentry
+    \entry{dev3lop2025visualization}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=33bfd541c5124256d495a42689011743}{%
+           family={{Dev3lop}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{33bfd541c5124256d495a42689011743}
+      \strng{fullhash}{33bfd541c5124256d495a42689011743}
+      \strng{bibnamehash}{33bfd541c5124256d495a42689011743}
+      \strng{authorbibnamehash}{33bfd541c5124256d495a42689011743}
+      \strng{authornamehash}{33bfd541c5124256d495a42689011743}
+      \strng{authorfullhash}{33bfd541c5124256d495a42689011743}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Dev3lop}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://dev3lop.com/data-visualization-principles-making-complex-data-understandable/}}
+      \field{title}{{Data Visualization Principles: Making Complex Data Understandable}}
+      \field{year}{2025}
+    \endentry
+    \entry{ethereum2022merge}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=91a561dbd1e35b5459edfad15075d17c}{%
+           family={{Ethereum Foundation}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{fullhash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{bibnamehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{authorbibnamehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{authornamehash}{91a561dbd1e35b5459edfad15075d17c}
+      \strng{authorfullhash}{91a561dbd1e35b5459edfad15075d17c}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Ethereum.org}
+      \field{month}{9}
+      \field{note}{Transición de Ethereum de PoW a PoS}
+      \field{title}{{The Merge}}
+      \field{year}{2022}
+    \endentry
+    \entry{ey_blockchain_analyzer}{misc}{}
+      \list{publisher}{1}{%
+        {Ernst \& Young}%
+      }
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{EY Blockchain Analyzer: Explorer \& Visualizer}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ey.com/en_us/services/blockchain/platforms/explorer-visualizer
+      \endverb
+      \verb{url}
+      \verb https://www.ey.com/en_us/services/blockchain/platforms/explorer-visualizer
+      \endverb
+    \endentry
+    \entry{fastercapital2025visual}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=44bc19a2a603b7bc0a368f77cd27a2de}{%
+           family={{FasterCapital}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{fullhash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{bibnamehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{authorbibnamehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{authornamehash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \strng{authorfullhash}{44bc19a2a603b7bc0a368f77cd27a2de}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{FasterCapital}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://fastercapital.com/topics/simplifying-complex-concepts-with-visual-storytelling.html}}
+      \field{title}{{Simplifying Complex Concepts With Visual Storytelling}}
+      \field{year}{2025}
+    \endentry
+    \entry{geeksforgeeks2024pbft}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{GeeksforGeeks}
+      \field{month}{7}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.geeksforgeeks.org/practical-byzantine-fault-tolerancepbft/}}
+      \field{title}{{Practical Byzantine Fault Tolerance(pBFT)}}
+      \field{year}{2024}
+    \endentry
+    \entry{charterglobal2025top}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9b6471be801815b0effbf2a80fc340fa}{%
+           family={Global},
+           familyi={G\bibinitperiod},
+           given={Charter},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{fullhash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{bibnamehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{authorbibnamehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{authornamehash}{9b6471be801815b0effbf2a80fc340fa}
+      \strng{authorfullhash}{9b6471be801815b0effbf2a80fc340fa}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Charter Global}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.charterglobal.com/blockchain-trends/}}
+      \field{title}{{Top Blockchain Trends for 2025: The Future of Digital Innovation}}
+      \field{year}{2025}
+    \endentry
+    \entry{hyperledger2025fabric}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b26e30662316beb13c2c5f629e23a4df}{%
+           family={{Hyperledger Fabric}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{fullhash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{bibnamehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{authorbibnamehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{authornamehash}{b26e30662316beb13c2c5f629e23a4df}
+      \strng{authorfullhash}{b26e30662316beb13c2c5f629e23a4df}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Hyperledger Fabric Documentation}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html}}
+      \field{title}{{The Ordering Service}}
+      \field{year}{2025}
+    \endentry
+    \entry{ibm2025blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={{IBM}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{IBM}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.ibm.com/es-es/topics/blockchain}}
+      \field{title}{{¿Qué es la tecnología blockchain?}}
+      \field{year}{2025}
+    \endentry
+    \entry{investopedia2024pos}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abcdb78a564e00abcb81ee953f22cf04}{%
+           family={{Investopedia}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{fullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{bibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorbibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authornamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorfullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Investopedia}
+      \field{month}{6}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.investopedia.com/terms/p/proof-stake-pos.asp}}
+      \field{title}{{Proof-of-Stake (PoS)}}
+      \field{year}{2024}
+    \endentry
+    \entry{investopedia2025pow}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abcdb78a564e00abcb81ee953f22cf04}{%
+           family={{Investopedia}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{fullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{bibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorbibnamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authornamehash}{abcdb78a564e00abcb81ee953f22cf04}
+      \strng{authorfullhash}{abcdb78a564e00abcb81ee953f22cf04}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Investopedia}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.investopedia.com/terms/p/proof-work.asp}}
+      \field{title}{{Proof of Work (PoW): Definition, How It Works, and Examples}}
+      \field{year}{2025}
+    \endentry
+    \entry{github2025jiechen257}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8a9ec22d3addbb83815cc7f4e868abf}{%
+           family={jiechen257},
+           familyi={j\bibinitperiod},
+           given={GitHub\bibnamedelima -},
+           giveni={G\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{fullhash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{bibnamehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{authorbibnamehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{authornamehash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \strng{authorfullhash}{f8a9ec22d3addbb83815cc7f4e868abf}
+      \field{sortinit}{j}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{GitHub}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://github.com/jiechen257/blockchain-visualizer}}
+      \field{title}{{jiechen257/blockchain-visualizer: An interactive web tool ...}}
+      \field{year}{2025}
+    \endentry
+    \entry{justinmind2025elearning}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=28105d12dbf84605a0938668e666441b}{%
+           family={{Justinmind}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{28105d12dbf84605a0938668e666441b}
+      \strng{fullhash}{28105d12dbf84605a0938668e666441b}
+      \strng{bibnamehash}{28105d12dbf84605a0938668e666441b}
+      \strng{authorbibnamehash}{28105d12dbf84605a0938668e666441b}
+      \strng{authornamehash}{28105d12dbf84605a0938668e666441b}
+      \strng{authorfullhash}{28105d12dbf84605a0938668e666441b}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Justinmind}
+      \field{month}{3}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.justinmind.com/ui-design/how-to-design-e-learning-platform}}
+      \field{title}{{E-learning platform design guide}}
+      \field{year}{2025}
+    \endentry
+    \entry{king2012ppcoin}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7bcb1c75f895e90edae35d495464c4e9}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Sunny},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d89c01dd1a8471766dad25fd83caa96d}{%
+           family={Nadal},
+           familyi={N\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{fullhash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{bibnamehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{authorbibnamehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{authornamehash}{e9034d9c8744e729e347b18d7d576e09}
+      \strng{authorfullhash}{e9034d9c8744e729e347b18d7d576e09}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Self-published paper}
+      \field{title}{PPCoin: Peer-to-peer crypto-currency with proof-of-stake}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://decred.org/research/king2012.pdf
+      \endverb
+      \verb{url}
+      \verb https://decred.org/research/king2012.pdf
+      \endverb
+    \endentry
+    \entry{mdpi2025pbft}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9bd49f4c55bb22330226b8f028fb16c1}{%
+           family={{MDPI}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{fullhash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{bibnamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authorbibnamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authornamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authorfullhash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.mdpi.com/2078-2489/16/4/268}}
+      \field{title}{{The Evolution and Optimization Strategies of a PBFT Consensus Algorithm for Consortium Blockchains}}
+      \field{year}{2025}
+    \endentry
+    \entry{nakamoto2008bitcoin}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1977190f018b398e43ede3de043de8ea}{%
+           family={Nakamoto},
+           familyi={N\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{fullhash}{1977190f018b398e43ede3de043de8ea}
+      \strng{bibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorbibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authornamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorfullhash}{1977190f018b398e43ede3de043de8ea}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documento original de Bitcoin que introdujo PoW en blockchain}
+      \field{title}{{Bitcoin: A Peer-to-Peer Electronic Cash System}}
+      \field{year}{2008}
+    \endentry
+    \entry{raft_consensus_simulator}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=764e911dad3498b9b07ebb6676757fd7}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Zihou},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Observable}%
+      }
+      \strng{namehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{fullhash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{bibnamehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{authorbibnamehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{authornamehash}{764e911dad3498b9b07ebb6676757fd7}
+      \strng{authorfullhash}{764e911dad3498b9b07ebb6676757fd7}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Raft Consensus Simulator}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://observablehq.com/@stwind/raft-consensus-simulator
+      \endverb
+      \verb{url}
+      \verb https://observablehq.com/@stwind/raft-consensus-simulator
+      \endverb
+    \endentry
+    \entry{d3js2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f602bfdf094ee86c5250abc3356194a8}{%
+           family={{Observable}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{fullhash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{bibnamehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{authorbibnamehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{authornamehash}{f602bfdf094ee86c5250abc3356194a8}
+      \strng{authorfullhash}{f602bfdf094ee86c5250abc3356194a8}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{D3.js}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://d3js.org/}}
+      \field{title}{{D3 by Observable | The JavaScript library for bespoke data visualization}}
+      \field{year}{2025}
+    \endentry
+    \entry{chronicle2025impact}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b708796c47561fb6bc4b09947421207a}{%
+           family={Higher\bibnamedelima Education},
+           familyi={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={The\bibnamedelima Chronicle},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{fullhash}{b708796c47561fb6bc4b09947421207a}
+      \strng{bibnamehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{authorbibnamehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{authornamehash}{b708796c47561fb6bc4b09947421207a}
+      \strng{authorfullhash}{b708796c47561fb6bc4b09947421207a}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{The Chronicle of Higher Education}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://sponsored.chronicle.com/the-impact-of-socialization-and-tacit-knowledge-on-blockchain-education/index.html}}
+      \field{title}{{The Impact of Socialization and Tacit Knowledge on Blockchain ...}}
+      \field{year}{2025}
+    \endentry
+    \entry{researchgate2018towards}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c71ca0e8ac5da7336ffa149007898f9}{%
+           family={ResearchGate},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{fullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{bibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorbibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authornamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorfullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.researchgate.net/publication/329281755_Towards_a_Survey_of_Interactive_Visualization_for_Education}}
+      \field{title}{{(PDF) Towards a Survey of Interactive Visualization for Education}}
+      \field{year}{2018}
+    \endentry
+    \entry{researchgate2025systematic}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c71ca0e8ac5da7336ffa149007898f9}{%
+           family={ResearchGate},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{fullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{bibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorbibnamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authornamehash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \strng{authorfullhash}{9c71ca0e8ac5da7336ffa149007898f9}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.researchgate.net/publication/385669465_A_Systematic_Literature_Review_on_Blockchain_Consensus_Mechanisms'_Security_Applications_and_Open_Challenges}}
+      \field{title}{{(PDF) A Systematic Literature Review on Blockchain Consensus ...}}
+      \field{year}{2024}
+    \endentry
+    \entry{thoughtspot2025principles}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f9429e9b79252ff222a0ea533947997}{%
+           family={{ThoughtSpot}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{fullhash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{bibnamehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{authorbibnamehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{authornamehash}{1f9429e9b79252ff222a0ea533947997}
+      \strng{authorfullhash}{1f9429e9b79252ff222a0ea533947997}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{ThoughtSpot}
+      \field{note}{Fecha de acceso: junio 3, 2025, \url{https://www.thoughtspot.com/data-trends/data-visualization/data-visualization-principles}}
+      \field{title}{{6 Most Useful Data Visualization Principles For Analysts}}
+      \field{year}{2025}
+    \endentry
+    \entry{stanford2025rodger}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70079656133b3884f6c571fd69f37e6f}{%
+           family={University},
+           familyi={U\bibinitperiod},
+           given={Stanford},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Stanford University}%
+      }
+      \strng{namehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{fullhash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{bibnamehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{authorbibnamehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{authornamehash}{70079656133b3884f6c571fd69f37e6f}
+      \strng{authorfullhash}{70079656133b3884f6c571fd69f37e6f}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://web.stanford.edu/~rodger/}}
+      \field{title}{{Rodger Research Laboratory - Stanford University}}
+      \field{type}{techreport}
+      \field{year}{2025}
+    \endentry
+    \entry{businesswire2025blockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=29dc8aadc9ad911c56fe8d5b05fc8ea9}{%
+           family={Wire},
+           familyi={W\bibinitperiod},
+           given={Business},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{fullhash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{bibnamehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{authorbibnamehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{authornamehash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \strng{authorfullhash}{29dc8aadc9ad911c56fe8d5b05fc8ea9}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Business Wire}
+      \field{note}{Fecha de acceso: mayo 25, 2025, \url{https://www.businesswire.com/news/home/20250313854857/en/Blockchain-Technology-Market-Report-2025-2030-Hybrid-Blockchain-Leads-Market-Expansion---Key-Use-Cases-Industry-Trends-to-2030---ResearchAndMarkets.com}}
+      \field{title}{{Blockchain Technology Market Report 2025-2030: Hybrid ...}}
+      \field{year}{2025}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
